@@ -1,0 +1,28 @@
+.badge {
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.badge__rect {
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	background-color: #D8E7FF;
+}
+
+.badge--yellow .badge__rect {
+	background-color: #FFF8B7;
+}
+
+.badge--red .badge__rect {
+	background-color: #FFCDCD;
+}
+
+.badge__icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: none;
+	color: $color-text;
+}

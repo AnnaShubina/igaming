@@ -1,0 +1,16 @@
+.iconCard {
+	display: flex;
+}
+
+.iconCard__pic {
+	flex-shrink: 0;
+	margin-right: 16px;
+}
+
+.iconCard__text {
+	font-size: 18px;
+}
+
+.iconCard--left {
+	margin-left: 20px;
+}

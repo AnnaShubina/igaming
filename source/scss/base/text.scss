@@ -1,0 +1,18 @@
+.text {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 500;
+	@include media(s) {
+		font-size: 16px;
+	}
+}
+
+
+.text--l {
+	font-size: 22px;
+}
+
+.text--thin {
+	max-width: 465px;
+}

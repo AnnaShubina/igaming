@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Omegalab</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="disableOutline">
+<div class="sr-only">
+	<!-- inject:svg -->
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<clipPath id="clip0_81:1996">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs><symbol id="analytics" viewBox="0 0 32 32">
+<path d="M26.0181 13.9594L15.2681 6.19556" stroke="#169BFC"/>
+<path d="M8.57936 20.5289L12.4016 7.03175" stroke="#169BFC"/>
+<path d="M25.8988 17.1844L10.3711 22.3205" stroke="#169BFC"/>
+<path d="M10.6321 5.55815C9.93352 4.25977 10.4197 2.64088 11.7181 1.94225C13.0165 1.24362 14.6354 1.72981 15.334 3.02819C16.0326 4.32657 15.5464 5.94546 14.248 6.64409C12.9497 7.34272 11.3308 6.85653 10.6321 5.55815Z" stroke="#169BFC"/>
+<path d="M28.1949 12.9922C29.6636 12.8621 30.9596 13.9473 31.0896 15.4159C31.2197 16.8846 30.1345 18.1806 28.6659 18.3107C27.1972 18.4407 25.9012 17.3556 25.7712 15.8869C25.6411 14.4182 26.7263 13.1222 28.1949 12.9922Z" stroke="#169BFC"/>
+<path d="M9.61634 25.1351C8.60051 26.2037 6.91073 26.2465 5.84211 25.2307C4.77349 24.2149 4.73069 22.5251 5.74652 21.4565C6.76235 20.3879 8.45214 20.3451 9.52076 21.3609C10.5894 22.3767 10.6322 24.0665 9.61634 25.1351Z" stroke="#169BFC"/>
+</symbol><symbol id="brains" viewBox="0 0 40 40">
+<path d="M23.952 12.1494C26.1795 12.1494 28.0267 10.3565 28.0267 8.0747C28.0267 5.79287 26.2338 4 23.952 4C21.6702 4 19.9316 5.79287 19.9316 8.0747V31.9253C19.9316 34.1528 21.7245 36 24.0063 36C26.2882 36 28.081 34.2071 28.081 31.9253C28.081 31.708 28.081 31.4907 28.0267 31.3277" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.0278 8.23782C28.3538 8.12916 28.7341 8.07483 29.1144 8.07483C31.3419 8.07483 33.1891 9.8677 33.1891 12.1495C33.1891 13.5621 32.4828 14.8117 31.3419 15.518" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.4292 19.5925C27.4292 17.365 29.2221 15.5178 31.5039 15.5178C33.7857 15.5178 35.5243 17.3107 35.5243 19.5925C35.5243 21.8744 33.7314 23.6672 31.4496 23.6672C31.0149 23.6672 30.5803 23.6129 30.1457 23.4499" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.7886 23.1782C31.0161 23.1782 32.8633 24.9711 32.8633 27.2529C32.8633 29.5348 31.0704 31.3276 28.7886 31.3276C26.5067 31.3276 24.7139 29.5348 24.7139 27.2529" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.8579 12.1494C13.6304 12.1494 11.7832 10.3565 11.7832 8.0747C11.7832 5.79287 13.5761 4 15.8579 4C18.1397 4 19.9326 5.79287 19.9326 8.0747V31.9253C19.9326 34.1528 18.1397 36 15.8579 36C13.5761 36 11.7832 34.2071 11.7832 31.9253C11.7832 31.708 11.7832 31.4907 11.8375 31.2733" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.7824 8.23782C11.4021 8.12916 11.0761 8.07483 10.6958 8.07483C8.46829 8.07483 6.62109 9.8677 6.62109 12.1495C6.62109 13.5621 7.32738 14.8117 8.46829 15.518" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.4351 19.5925C12.4351 17.365 10.6422 15.5178 8.36035 15.5178C6.07851 15.5178 4.28564 17.3107 4.28564 19.5925C4.28564 21.8744 6.07851 23.6672 8.36035 23.6672C8.79498 23.6672 9.22962 23.6129 9.66425 23.4499" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.0234 23.1782C8.79593 23.1782 6.94873 24.9711 6.94873 27.2529C6.94873 29.5348 8.7416 31.3276 11.0234 31.3276C13.3053 31.3276 15.0981 29.5348 15.0981 27.2529" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="comp" viewBox="0 0 40 40">
+<path d="M38.3902 8.69761V30.1838H4.03111C2.56399 30.1838 1.3335 28.9534 1.3335 27.4862V8.69761C1.3335 7.23049 2.56399 6 4.03111 6H35.7399C37.207 6 38.3902 7.18316 38.3902 8.69761Z" stroke="#161616" stroke-width="0.709898"/>
+<path d="M11.0825 33.7333H28.6407" stroke="#161616" stroke-width="0.709898" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.2412 13.3356H33.7993" stroke="#161616" stroke-width="0.709898" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.2412 22.3275H33.7993" stroke="#161616" stroke-width="0.709898" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.30273 22.3677L8.01629 24.694L11.0354 19.9613" stroke="#161616" stroke-width="0.709898" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.30273 13.3756L8.01629 15.7019L11.0354 10.9692" stroke="#161616" stroke-width="0.709898" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.8853 30.1366V33.7334" stroke="#161616" stroke-width="0.709898" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="graph" viewBox="0 0 40 40">
+<circle cx="5" cy="20" r="2.5" stroke="#FA842E"/>
+<path d="M16.5 12C16.5 13.3807 15.3807 14.5 14 14.5C12.6193 14.5 11.5 13.3807 11.5 12C11.5 10.6193 12.6193 9.5 14 9.5C15.3807 9.5 16.5 10.6193 16.5 12Z" stroke="#FA842E"/>
+<path d="M26.5 15C26.5 16.3807 25.3807 17.5 24 17.5C22.6193 17.5 21.5 16.3807 21.5 15C21.5 13.6193 22.6193 12.5 24 12.5C25.3807 12.5 26.5 13.6193 26.5 15Z" stroke="#FA842E"/>
+<path d="M35.5 5C35.5 6.38071 34.3807 7.5 33 7.5C31.6193 7.5 30.5 6.38071 30.5 5C30.5 3.61929 31.6193 2.5 33 2.5C34.3807 2.5 35.5 3.61929 35.5 5Z" stroke="#FA842E"/>
+<rect x="3.5" y="28.5" width="5" height="9" rx="0.5" stroke="#FA842E"/>
+<rect x="11.8335" y="19.5" width="5" height="18" rx="0.5" stroke="#FA842E"/>
+<rect x="21.8335" y="23.5" width="5" height="14" rx="0.5" stroke="#FA842E"/>
+<rect x="31.8335" y="13.5" width="5" height="24" rx="0.5" stroke="#FA842E"/>
+<line x1="0.5" y1="37.5" x2="39.5" y2="37.5" stroke="#FA842E" stroke-linecap="round"/>
+<line x1="6.64645" y1="18.6464" x2="11.6464" y2="13.6464" stroke="#FA842E"/>
+<line x1="16.1857" y1="12.5358" x2="21.1857" y2="14.5358" stroke="#FA842E"/>
+<line x1="25.6204" y1="13.6746" x2="31.6204" y2="6.6746" stroke="#FA842E"/>
+</symbol><symbol id="like" viewBox="0 0 40 40">
+<path d="M9.0361 37.9338H4.43739C2.5366 37.9338 0.942383 36.2709 0.942383 34.2882V21.4327C0.942383 19.45 2.5366 17.7871 4.43739 17.7871H9.0361C10.9369 17.7871 12.5311 19.45 12.5311 21.4327V34.3522C12.4698 36.3348 10.9369 37.9338 9.0361 37.9338Z" stroke="#FA842E" stroke-width="1.3"/>
+<path d="M11.8564 35.951C11.8564 35.951 13.512 38.3175 17.4362 38.3175C21.3604 38.3175 31.7841 38.3175 31.7841 38.3175C31.7841 38.3175 35.8923 38.8931 35.2791 33.073C35.2791 33.073 38.7743 31.7298 36.996 27.5087C36.996 27.5087 40.8588 26.4214 37.9157 22.1362C37.9157 22.1362 45.4576 13.1821 25.4073 15.0369C25.4073 15.0369 28.657 2.11744 20.7472 1.66973C19.7662 1.60578 18.9691 2.50118 19.0304 3.52451C19.337 7.04217 19.0304 15.3567 11.8564 19.0023" stroke="#FA842E" stroke-width="1.3"/>
+</symbol><symbol id="men" viewBox="0 0 32 32">
+<path d="M10.2251 3.70001H16.2297C19.4614 3.70001 22.0812 6.31984 22.0812 9.55155C22.0812 12.7794 19.4273 15.4031 16.1917 15.4031C12.9138 15.4031 10.2251 12.7451 10.2251 9.47503V3.70001Z" stroke="#FF00D6"/>
+<path d="M28.8563 29.3713C28.8563 21.9335 23.7978 15.903 16.0002 15.903C8.20259 15.903 3.14404 21.9335 3.14404 29.3713" stroke="#FF00D6" stroke-linecap="round"/>
+</symbol><symbol id="messages" viewBox="0 0 40 40">
+<path d="M26.6759 26.5H26.5429L26.4274 26.5661L21.0642 29.6375V27V26.5H20.5642H16.0889C14.7082 26.5 13.5889 25.3807 13.5889 24V7C13.5889 5.61929 14.7082 4.5 16.0889 4.5H37.0002C38.3809 4.5 39.5002 5.61929 39.5002 7V24C39.5002 25.3807 38.3809 26.5 37.0002 26.5H26.6759Z" fill="white" stroke="#FA842E"/>
+<line x1="19.7007" y1="10.5" x2="33.6514" y2="10.5" stroke="#FA842E" stroke-linecap="round"/>
+<line x1="19.7007" y1="14.5" x2="33.6514" y2="14.5" stroke="#FA842E" stroke-linecap="round"/>
+<line x1="19.7007" y1="18.5" x2="33.6514" y2="18.5" stroke="#FA842E" stroke-linecap="round"/>
+<path d="M13.5871 32.5H13.454L13.3386 32.5661L7.97536 35.6375V33V32.5H7.47536H3C1.61929 32.5 0.5 31.3807 0.5 30V13C0.5 11.6193 1.61929 10.5 3 10.5H23.9113C25.292 10.5 26.4113 11.6193 26.4113 13V30C26.4113 31.3807 25.292 32.5 23.9113 32.5H13.5871Z" fill="white" stroke="#FA842E"/>
+<line x1="6.61182" y1="16.5" x2="20.5625" y2="16.5" stroke="#FA842E" stroke-linecap="round"/>
+<line x1="6.61182" y1="20.5" x2="20.5625" y2="20.5" stroke="#FA842E" stroke-linecap="round"/>
+<line x1="6.61182" y1="24.5" x2="20.5625" y2="24.5" stroke="#FA842E" stroke-linecap="round"/>
+</symbol><symbol id="mobile" viewBox="0 0 32 32">
+<path d="M6.29601 2.56261H17.9766C22.4815 2.56261 26.1335 6.21458 26.1335 10.7195V21.0229C26.1335 25.5279 22.4815 29.1798 17.9766 29.1798H14.4529C9.94798 29.1798 6.29601 25.5279 6.29601 21.023V2.56261Z" stroke="#03E835" stroke-width="0.858621"/>
+<path d="M14.9658 3.73901L17.4636 3.73901" stroke="#03E835" stroke-width="0.858621" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.3915 2.56261C20.1851 3.89531 19.0328 4.91545 17.6423 4.91545H14.7876C13.3971 4.91545 12.2448 3.89531 12.0384 2.56261H20.3915Z" stroke="#03E835" stroke-width="0.858621"/>
+</symbol><symbol id="ok" viewBox="0 0 32 32">
+<path d="M15.7338 4.23334C22.3796 4.23334 27.7671 9.62085 27.7671 16.2667C27.7671 22.9125 22.3796 28.3 15.7338 28.3C9.08793 28.3 3.70043 22.9125 3.70043 16.2667L3.70043 4.23333L15.7338 4.23334Z" stroke="#FA842E"/>
+<path d="M12.1279 16.9086L14.5135 20.9023L19.6823 11.6311" stroke="#FA842E" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="quality" viewBox="0 0 40 40">
+<g clip-path="url(#clip0_81:1996)">
+<path d="M39.4163 20.0889C39.4163 21.7084 37.2453 23.0178 36.8251 24.5338C36.4049 26.0844 37.5955 28.2896 36.7901 29.6334C35.9848 31.0117 33.4286 31.0806 32.3081 32.2177C31.1875 33.3203 31.0825 35.8356 29.6819 36.6281C28.3162 37.4206 26.0752 36.2491 24.4995 36.6626C22.9938 37.0761 21.6282 39.2123 19.9824 39.2123C18.3366 39.2123 17.006 37.0761 15.4653 36.6626C13.8896 36.2491 11.6486 37.4206 10.283 36.6281C8.88232 35.8356 8.81228 33.3203 7.65673 32.2177C6.53624 31.115 3.98006 31.0117 3.17468 29.6334C2.36932 28.2896 3.55986 26.0844 3.13967 24.5338C2.75449 23.0522 0.583496 21.7084 0.583496 20.0889C0.583496 18.4695 2.75449 17.1601 3.17468 15.6441C3.59488 14.0935 2.40433 11.8883 3.2097 10.5445C4.01507 9.16622 6.57126 9.0973 7.69175 7.96021C8.81228 6.85763 8.91734 4.34229 10.318 3.54979C11.6836 2.75729 13.9246 3.92881 15.5004 3.51533C17.006 3.13631 18.3366 1 19.9824 1C21.6282 1 22.9588 3.13631 24.4995 3.54979C26.0752 3.96327 28.3162 2.79174 29.6819 3.58424C31.0825 4.37675 31.1525 6.89209 32.3081 7.99468C33.4286 9.0973 35.9848 9.20068 36.7901 10.5789C37.5955 11.9227 36.4049 14.1279 36.8251 15.6785C37.2453 17.1601 39.4163 18.4695 39.4163 20.0889Z" stroke="#161616" stroke-width="1.2973" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M12.979 21.4673L17.391 28.4275L26.9854 12.2329" stroke="#161616" stroke-width="1.2973" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+</symbol></svg>
+	<!-- endinject -->
+</div>
+<main class="main">
+	<section class="intro">
+		<header class="header">
+			<div class="layout layout--l">
+				<div class="header__wrap">
+					<div class="header__logo">
+						<img src="img/logo.svg" alt="logo" width="160" height="28">
+					</div>
+					<nav class="nav hidden-to-l">
+						<button class="nav__link" data-ref="services">Services</button>
+						<button class="nav__link" data-ref="solutions">Solutions</button>
+						<button class="nav__link" data-ref="company">Company</button>
+						<button class="nav__link" data-ref="contact">Contact</button>
+					</nav>
+					<div class="header__right">
+						<div class="btn btn--outline hidden-to-s">Request a call</div>
+						<button class="header__toggle hidden-from-l js-menu-open">
+							<img src="img/burger.svg" alt="menu">
+						</button>
+					</div>
+					<div class="menuMobile js-menu">
+						<div class="menuMobile__header">
+							<div class="header__logo">
+								<img src="img/logo.svg" class="hidden-from-s" alt="logo" width="160" height="28">
+							</div>
+							<button class="link js-menu-close"><img src="img/close.svg" alt="close" width="36" height="35"></button>
+						</div>
+						<div class="menuMobile__list">
+							<nav class="nav">
+								<button class="nav__link js-menu-close" data-ref="services">Services</button>
+								<button class="nav__link js-menu-close" data-ref="solutions">Solutions</button>
+								<button class="nav__link js-menu-close" data-ref="company">Company</button>
+								<button class="nav__link js-menu-close" data-ref="contact">Contact</button>
+							</nav>
+						</div>
+						<div class="btn btn--outline">Request a call</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="intro__back">
+			<svg width="917" height="869" viewBox="0 0 917 869" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="458.5" cy="434.5" rx="458.5" ry="434.5" fill="url(#paint0_radial_104:2383)" fill-opacity="0.4"/>
+				<defs>
+					<radialGradient id="paint0_radial_104:2383" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(458.5 434.5) rotate(89.9192) scale(493.592 520.857)">
+						<stop stop-color="#169BFC"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="intro__back2">
+			<svg width="936" height="889" viewBox="0 0 936 889" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="468" cy="444.5" rx="468" ry="444.5" fill="url(#paint0_radial_104:2384)" fill-opacity="0.4"/>
+				<defs>
+					<radialGradient id="paint0_radial_104:2384" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(468 444.5) rotate(89.8975) scale(388.851 409.409)">
+						<stop stop-color="#FA842E"/>
+						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+					</radialGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="layout">
+			<div class="intro__inner">
+				<h1 class="intro__title">Take Your iGaming Software To The Next Level</h1>
+				<div class="intro__content">
+					<div class="intro__description">We&nbsp;offer strategic partnerships to <br class="hidden-from-s"> develop
+						your product either
+						from scratch or&nbsp;join it&nbsp;at&nbsp;any stage to&nbsp;accelerate its release
+					</div>
+					<button class="btn btn--animate" data-text="Discuss project">
+						<span class="btn__label">Discuss project</span>
+						<span class="btn__bg"></span>
+					</button>
+				</div>
+				<div class="intro__pic">
+					<svg width="520" height="506" viewBox="0 0 520 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g filter="url(#filter0_b_273:336)">
+							<rect x="21" y="12" width="476" height="469" rx="100" fill="white" fill-opacity="0.4"/>
+						</g>
+						<g filter="url(#filter1_d_273:336)">
+							<path
+								d="M259.468 232.5C261.968 217.833 269.881 180.765 214.001 185.5C184.5 188 188.5 154.5 208.001 154.5C236.001 154.5 306.547 156.77 330.001 154.5C357 151.887 351.501 120.413 333.001 118C310.001 115 219.502 118 196.501 118C173.5 118 170.902 85 200.502 85C220.502 85 256.004 84.5 274.004 62"
+								stroke="white" stroke-width="5"/>
+						</g>
+						<path
+							d="M75.5 346.512C75.5 300.666 112.666 263.5 158.512 263.5H361.281C407.241 263.5 444.5 300.759 444.5 346.719C444.5 401.608 392.296 441.463 339.348 426.997L285.727 412.347C267.904 407.478 249.096 407.516 231.293 412.459L180.719 426.5C127.827 441.184 75.5 401.406 75.5 346.512Z"
+							fill="url(#paint0_linear_273:336)" stroke="white" stroke-width="5"/>
+						<path
+							d="M146.5 331C151.194 331 155 327.194 155 322.5V306C155 304.067 156.567 302.5 158.5 302.5H180.5C182.433 302.5 184 304.067 184 306V322.5C184 327.194 187.806 331 192.5 331H212.5C214.433 331 216 332.567 216 334.5V353C216 354.933 214.433 356.5 212.5 356.5H192.5C187.806 356.5 184 360.306 184 365V381C184 382.933 182.433 384.5 180.5 384.5H158.5C156.567 384.5 155 382.933 155 381V365C155 360.306 151.194 356.5 146.5 356.5H128C126.067 356.5 124.5 354.933 124.5 353V334.5C124.5 332.567 126.067 331 128 331H146.5Z"
+							stroke="white" stroke-width="5"/>
+						<path
+							d="M373.5 314.5C373.5 323.469 366.655 330.5 358.5 330.5C350.345 330.5 343.5 323.469 343.5 314.5C343.5 305.531 350.345 298.5 358.5 298.5C366.655 298.5 373.5 305.531 373.5 314.5Z"
+							stroke="white" stroke-width="5"/>
+						<path
+							d="M373.5 368.5C373.5 377.469 366.655 384.5 358.5 384.5C350.345 384.5 343.5 377.469 343.5 368.5C343.5 359.531 350.345 352.5 358.5 352.5C366.655 352.5 373.5 359.531 373.5 368.5Z"
+							stroke="white" stroke-width="5"/>
+						<path
+							d="M405.5 341.5C405.5 350.469 398.655 357.5 390.5 357.5C382.345 357.5 375.5 350.469 375.5 341.5C375.5 332.531 382.345 325.5 390.5 325.5C398.655 325.5 405.5 332.531 405.5 341.5Z"
+							stroke="white" stroke-width="5"/>
+						<path
+							d="M341.5 341.5C341.5 350.469 334.655 357.5 326.5 357.5C318.345 357.5 311.5 350.469 311.5 341.5C311.5 332.531 318.345 325.5 326.5 325.5C334.655 325.5 341.5 332.531 341.5 341.5Z"
+							stroke="white" stroke-width="5"/>
+						<path
+							d="M223.5 248C223.5 238.335 231.335 230.5 241 230.5H278C287.665 230.5 295.5 238.335 295.5 248V263.5H223.5V248Z"
+							fill="url(#paint1_linear_273:336)" stroke="white" stroke-width="5"/>
+						<circle cx="93" cy="430" r="8" fill="#FFDCF9"/>
+						<circle cx="455" cy="74" r="8" fill="#FFCDCD"/>
+						<circle opacity="0.4" cx="455" cy="21" r="21" fill="#D8E7FF"/>
+						<circle cx="509" cy="42" r="11" fill="#FFDCF9"/>
+						<circle cx="21" cy="409" r="21" fill="#FFE6D3"/>
+						<circle cx="42" cy="495" r="11" fill="#FFF8B7"/>
+						<defs>
+							<filter id="filter0_b_273:336" x="19" y="10" width="480" height="473" filterUnits="userSpaceOnUse"
+											color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feGaussianBlur in="BackgroundImage" stdDeviation="1"/>
+								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_273:336"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_273:336" result="shape"/>
+							</filter>
+							<filter id="filter1_d_273:336" x="146.272" y="30.4383" width="234.804" height="232.482"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+															 result="hardAlpha"/>
+								<feOffset/>
+								<feGaussianBlur stdDeviation="15"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0.0115451 0 0 0 0 0.326266 0 0 0 0 0.554167 0 0 0 0.2 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_273:336"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_273:336" result="shape"/>
+							</filter>
+							<linearGradient id="paint0_linear_273:336" x1="149" y1="285.5" x2="396.5" y2="412"
+															gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FFDABE"/>
+								<stop offset="1" stop-color="#B4DFFF"/>
+							</linearGradient>
+							<linearGradient id="paint1_linear_273:336" x1="236.647" y1="232.702" x2="286.06" y2="259.795"
+															gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FFDABE"/>
+								<stop offset="1" stop-color="#B4DFFF"/>
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="box">
+		<div class="box__decor">
+			<svg width="813" height="788" viewBox="0 0 813 788" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M54.1892 165.105C100.85 93.7827 173.393 43.3766 256.511 24.522L318.837 10.3839C387.399 -5.16892 459.036 -2.4828 526.272 18.0595C688.902 67.747 803.3 214.43 811.29 384.293L811.901 397.297C816.716 499.647 779.142 599.458 708.028 673.225C642.269 741.437 552.98 782.015 458.349 786.696L448.529 787.181C328.835 793.101 212.867 744.66 132.948 655.359L114.488 634.733C75.025 590.637 45.4538 538.608 27.761 482.138L15.5927 443.301C-13.808 349.465 0.353247 247.393 54.1892 165.105Z" fill="url(#paint0_radial_81:2073)" fill-opacity="0.15"/>
+				<defs>
+					<radialGradient id="paint0_radial_81:2073" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
+						<stop stop-color="#169BFC"/>
+						<stop offset="1" stop-color="#F8FBFF" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
+		</div>
+		<img src="img/dots.svg" alt="decor" width="144" height="164" class="box__dots">
+		<div class="layout">
+			<div class="box__header text-center">
+				<h2 class="title-l title--thin">How Can OmegaLab's Team
+					Of Development Professionals Help You?</h2>
+			</div>
+			<div class="cells cells--indent">
+				<div class="cell__3 cell__l-6 cell__s-12">
+					<div class="iconCard">
+						<svg width="32" height="32" class="iconCard__pic">
+							<use xlink:href="#analytics"></use>
+						</svg>
+						<span class="iconCard__text text-gray">Developing Your Operations Platform</span>
+					</div>
+				</div>
+				<div class="cell__3 cell__l-6 cell__s-12">
+					<div class="iconCard">
+						<svg width="32" height="32" class="iconCard__pic">
+							<use xlink:href="#ok"></use>
+						</svg>
+						<span class="iconCard__text text-gray">Integration of&nbsp;Games to&nbsp;Your Platform</span>
+					</div>
+				</div>
+				<div class="cell__3 cell__l-6 cell__s-12">
+					<div class="iconCard">
+						<svg width="32" height="32" class="iconCard__pic">
+							<use xlink:href="#mobile"></use>
+						</svg>
+						<span class="iconCard__text text-gray">Bringing Your Games to&nbsp;Life from Scratch</span>
+					</div>
+				</div>
+				<div class="cell__3 cell__l-6 cell__s-12">
+					<div class="iconCard iconCard--left">
+						<svg width="32" height="32" class="iconCard__pic">
+							<use xlink:href="#men"></use>
+						</svg>
+						<span class="iconCard__text text-gray">Seamless Payments for Your Customers</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="box">
+		<div class="layout">
+			<div class="box__header text-center">
+				<h2 class="title box__header box__header--s">Why Choose OmegaLab?</h2>
+				<div class="cells cells--indent-x cells--center">
+					<div class="cell__8 cell__m-10 cell__s-12">
+						<p class="text">OmegaLab&rsquo;s experts have been helping ambitious iGaming businesses to&nbsp;engage and
+							thrill their players for 15&nbsp;years, through a&nbsp;combination of&nbsp;technological superiority,
+							beautiful design and sound regulatory compliance.</p>
+					</div>
+				</div>
+			</div>
+			<div class="cells cells--indent">
+				<div class="cell__4 cell__l-6 cell__s-12">
+					<div class="card card--right moveRight fadeIn animation-wave">
+						<div class="badge badge--yellow card__badge">
+							<div class="badge__rect"></div>
+							<svg width="40" height="40" class="badge__icon">
+								<use xlink:href="#brains"></use>
+							</svg>
+						</div>
+						<div class="title-s">Hassle-free iGaming</div>
+						<div class="text text-gray mt-12">
+							We&rsquo;re experts in&nbsp;what we&nbsp;do, so&nbsp;you can be&nbsp;sure that we&nbsp;will be&nbsp;the
+							perfect partner to&nbsp;make your dreams a&nbsp;reality.
+						</div>
+					</div>
+				</div>
+				<div class="cell__4 cell__l-6 cell__s-12">
+					<div class="card card--rightS moveRight fadeIn fadeIn--2 animation-wave">
+						<div class="badge badge--red card__badge">
+							<div class="badge__rect"></div>
+							<svg width="40" height="40" class="badge__icon">
+								<use xlink:href="#quality"></use>
+							</svg>
+						</div>
+						<div class="title-s">Highly-skilled developers</div>
+						<div class="text text-gray mt-12">
+							Our blend of&nbsp;skills in&nbsp;front and back end, coupled with streamlined development methodologies,
+							help create a&nbsp;product which fits the market.
+						</div>
+					</div>
+				</div>
+				<div class="cell__4 cell__l-6 cell__s-12">
+					<div class="card card--left moveRight fadeIn fadeIn--3 animation-wave">
+						<div class="badge card__badge">
+							<div class="badge__rect"></div>
+							<svg width="40" height="40" class="badge__icon">
+								<use xlink:href="#comp"></use>
+							</svg>
+						</div>
+						<div class="title-s">Rapid back-end scaling</div>
+						<div class="text text-gray mt-12">
+							Our experience in&nbsp;networking technologies, paired with excellent skills, helps to&nbsp;scale your
+							backend with lightning speed.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="box">
+		<div class="layout">
+			<h2 class="title box__header text-center">How Fast Do We Work?</h2>
+			<div class="cells cells--indent">
+				<div class="cell__4 cell__l-6">
+					<div class="plate plate--grow">
+						<div class="plate__inner"></div>
+						<svg width="40" height="40">
+							<use xlink:href="#messages"></use>
+						</svg>
+						<div class="plate__title">10hr</div>
+						<p class="text text-gray plate__text">We&rsquo;re ready to&nbsp;discuss your
+							project after receiving request</p>
+					</div>
+				</div>
+				<div class="cell__4 cell__l-6">
+					<div class="plate plate--grow">
+						<div class="plate__inner"></div>
+						<svg width="40" height="40">
+							<use xlink:href="#graph"></use>
+						</svg>
+						<div class="plate__title">30min</div>
+						<p class="text text-gray plate__text">Of&nbsp;complementary business analytics services</p>
+					</div>
+				</div>
+				<div class="cell__4 cell__l-6">
+					<div class="plate plate--grow">
+						<div class="plate__inner"></div>
+						<svg width="40" height="40">
+							<use xlink:href="#like"></use>
+						</svg>
+						<div class="plate__title">12hr</div>
+						<p class="text text-gray plate__text">Your project can be&nbsp;launched after confirmation of&nbsp;our partnership</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="box box--waves swell">
+		<svg width="1435" height="121" viewBox="0 0 1435 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M1434 69.5607C1377.6 83.1798 1344.9 87.9281 1286.94 90.9177C1196.94 95.5601 1147.28 68.6876 1057.16 69.5607C928.98 70.8026 861.101 120.197 732.914 120.411C603.349 120.627 533.8 84.4544 405.094 69.5607C278.5 54.9114 199.928 55.4804 76.2528 90.9177C42.7363 100.521 -8 120.411 -8 120.411"
+				stroke="url(#paint0_linear_48:42)"/>
+			<path
+				d="M1434 54.6784C1377.6 68.2975 1344.9 73.0458 1286.94 76.0354C1196.94 80.6778 1147.28 53.8053 1057.16 54.6784C928.98 55.9202 861.101 105.314 732.914 105.528C603.349 105.745 533.8 69.5721 405.094 54.6784C278.5 40.0291 199.928 40.598 76.2528 76.0354C42.7363 85.639 -8 105.528 -8 105.528"
+				stroke="url(#paint1_linear_48:42)"/>
+			<path
+				d="M1434 39.7961C1377.6 53.4152 1344.9 58.1635 1286.94 61.1531C1196.94 65.7954 1147.28 38.923 1057.16 39.7961C928.98 41.0379 861.101 90.4321 732.914 90.646C603.349 90.8623 533.8 54.6897 405.094 39.7961C278.5 25.1467 199.928 25.7157 76.2528 61.1531C42.7363 70.7567 -8 90.646 -8 90.646"
+				stroke="url(#paint2_linear_48:42)"/>
+			<path
+				d="M1434 24.9138C1377.6 38.5329 1344.9 43.2812 1286.94 46.2707C1196.94 50.9131 1147.28 24.0406 1057.16 24.9138C928.98 26.1556 861.101 75.5498 732.914 75.7637C603.349 75.9799 533.8 39.8074 405.094 24.9138C278.5 10.2644 199.928 10.8334 76.2528 46.2707C42.7363 55.8744 -8 75.7637 -8 75.7637"
+				stroke="url(#paint3_linear_48:42)"/>
+			<path
+				d="M1434 10.0314C1377.6 23.6505 1344.9 28.3989 1286.94 31.3884C1196.94 36.0308 1147.28 9.15833 1057.16 10.0314C928.98 11.2733 861.101 60.6674 732.914 60.8814C603.349 61.0976 533.8 24.9251 405.094 10.0314C278.5 -4.6179 199.928 -4.04895 76.2528 31.3884C42.7363 40.9921 -8 60.8814 -8 60.8814"
+				stroke="url(#paint4_linear_48:42)"/>
+			<defs>
+				<linearGradient id="paint0_linear_48:42" x1="-8" y1="90.0006" x2="1434" y2="61.0005"
+												gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="0.536458" stop-color="#D4E8FF"/>
+					<stop offset="1" stop-color="white"/>
+				</linearGradient>
+				<linearGradient id="paint1_linear_48:42" x1="0.999994" y1="126" x2="1455.5" y2="75.9996"
+												gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="0.536458" stop-color="#D4E8FF"/>
+					<stop offset="1" stop-color="white"/>
+				</linearGradient>
+				<linearGradient id="paint2_linear_48:42" x1="6.00001" y1="91.0002" x2="1434" y2="61.0004"
+												gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="0.536458" stop-color="#D4E8FF"/>
+					<stop offset="1" stop-color="white"/>
+				</linearGradient>
+				<linearGradient id="paint3_linear_48:42" x1="-8" y1="76.0005" x2="1434" y2="76.0005"
+												gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="0.536458" stop-color="#D4E8FF"/>
+					<stop offset="1" stop-color="white"/>
+				</linearGradient>
+				<linearGradient id="paint4_linear_48:42" x1="-4.29654e-06" y1="60.9995" x2="1434" y2="45.4997"
+												gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="0.536458" stop-color="#D5E8FF"/>
+					<stop offset="1" stop-color="white"/>
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+	<section class="box">
+		<div class="layout">
+			<h2 class="title box__header text-center">Technologies</h2>
+			<div class="cells cells--indent">
+				<div class="cell__1 hidden-to-m"></div>
+				<div class="cell__10 cell__m-12">
+					<div class="picRow">
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/js.svg" alt="java script" width="100" height="100">
+						</div>
+						<div class="picRow__item picRow__item--s">
+							<img src="img/technologies/java.svg" alt="java" width="66" height="100">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/ci.svg" alt="c#" width="100" height="100">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/swift.svg" alt="swift" width="120" height="38">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/spring.svg" alt="spring" width="120" height="31">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/play.svg" alt="play" width="120" height="63">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/angular.svg" alt="angular" width="100" height="106">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/aws.svg" alt="aws" height="71" width="120">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/rabbit.svg" alt="rabbit" width="120" height="60">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/vue.svg" alt="vue js" width="100" height="87">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/sql.svg" alt="mysql" width="120" height="82">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/postgre.svg" alt="postgre" width="100" height="87">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/objective-c.svg" alt="objective-c" width="120" height="40">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/kafka.svg" alt="kafka" width="120" height="60">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/kotlin.svg" alt="kotlin" width="90" height="90">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/ansible.svg" alt="ansible" width="80" height="100">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/terraform.svg" alt="terraform" width="120" height="28">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/kubernetes.svg" alt="kubernetes" width="120" height="22">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/react.svg" alt="react" width="100" height="88">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/net.svg" alt="microsoft net" width="100" height="95">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/mongodb.svg" alt="mongodb" width="120" height="33">
+						</div>
+						<div class="picRow__item">
+							<img src="img/technologies/redis.svg" alt="redis" width="120" height="40">
+						</div>
+						<div class="picRow__item picRow__item--m">
+							<img src="img/technologies/digital-ocean.svg" alt="digital ocean" width="100" height="100">
+						</div>
+						<div class="picRow__item picRow__item--s">
+							<img src="img/technologies/jenkins.svg" alt="jenkins" width="72" height="100">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="box box--accent box--s" id="contact">
+		<div class="box__ellipse">
+			<svg width="1326" height="1259" viewBox="0 0 1326 1259" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="663" cy="629.5" rx="663" ry="629.5" fill="url(#paint0_radial_472:1038)" fill-opacity="0.4"/>
+				<defs>
+					<radialGradient id="paint0_radial_472:1038" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(663 629.5) rotate(89.8975) scale(550.69 579.996)">
+						<stop stop-color="#FA842E"/>
+						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+					</radialGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="box__ellipse2">
+			<svg width="1150" height="1090" viewBox="0 0 1150 1090" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="575" cy="545" rx="575" ry="545" fill="url(#paint0_radial_472:1037)" fill-opacity="0.4"/>
+				<defs>
+					<radialGradient id="paint0_radial_472:1037" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(575 545) rotate(89.9193) scale(619.121 653.201)">
+						<stop stop-color="#169BFC"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="layout">
+			<div class="cells cells--indent">
+				<div class="cell__7 cell__l-12 l-text-center">
+					<h2 class="title title--gradient box__indent">
+						Would You Like To Discuss Your Project Or Get An Estimate?
+					</h2>
+					<p class="text text--l text--thin text-gray box__footer">Please, leave your contact details
+						and&nbsp;we&rsquo;ll get in&nbsp;touch with you shortly</p>
+				</div>
+				<div class="cell__5 cell__l-12">
+					<form action="#" class="form form--left">
+						<div class="form__back"></div>
+						<div class="form__item">
+							<input type="text" placeholder="First and last name" class="formField">
+						</div>
+						<div class="form__item">
+							<input type="text" placeholder="Company name" class="formField">
+						</div>
+						<div class="form__item">
+							<div class="custom-select">
+								<select>
+									<option value="0">Position</option>
+									<option value="1">CEO/Founder</option>
+									<option value="2">Finance Director/CFO</option>
+									<option value="3">CMO/CCO/CRO/Account Director</option>
+									<option value="4">CPO/CTO</option>
+									<option value="5">Product Manager/Project Manager</option>
+									<option value="6">HR (mabager/director)</option>
+									<option value="7">Tender/Big Manager</option>
+									<option value="8">Office manager/General</option>
+									<option value="9">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__item">
+							<input type="email" placeholder="Phone" class="formField">
+						</div>
+						<div class="form__item">
+							<input type="text" placeholder="E-mail" class="formField">
+						</div>
+						<div class="form__item">
+							<textarea placeholder="Your comment" class="formField textarea-resize"></textarea>
+						</div>
+						<div class="form__footer">
+							<label class="option">
+								<input type="checkbox" checked class="visually-hidden">
+								<span class="option__element"></span>
+								<span class="option__label">
+									By submitting the form you <br> agree to the <a href="#" class="link text-brand" target="_blank">confidentiality policy</a>
+								</span>
+							</label>
+
+						</div>
+						<button class="btn btn--animate form__btn" data-text="Submit">
+							<span class="btn__label">Submit</span>
+							<span class="btn__bg"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="box box--s">
+		<div class="layout">
+			<div class="cells cells--indent cells--adaptive cells--flex flex-center s-text-center">
+				<div class="cell__6 cell__s-12">
+					<h3 class="title-m">15 years of experience in&nbsp;iGaming</h3>
+					<p class="fz-18 mt-15">Partnering with iGaming leaders to&nbsp;develop progressive software solutions</p>
+				</div>
+				<div class="cell__5 cell__s-12 text-right s-text-center">
+					<button class="btn btn--fix mr-12 btn--animate" data-text="Game on">
+						<span class="btn__label">Game on</span>
+						<span class="btn__bg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="layout">
+		<div class="cells cells--indent cells--flex s-text-center">
+			<div class="cell__4 cell__m-6 cell__s-12">
+				<ul class="list list--footer">
+					<li class="list__item list__title">Сustomer service</li>
+					<li class="list__item lh-s">
+						(US) +1 206 693 4359 <br>
+						(NL) +31 20 532 0842 <br>
+						(UK) +44 203 514 6053
+					</li>
+					<li class="list__item list__item--l">
+						<a href="mailto:commerce@omegalab.dev" class="link link--underline">commerce@omegalab.dev</a>
+					</li>
+					<li class="list__item list__title">Administrative service</li>
+					<li class="list__item">
+						<a href="mailto:contact@omegalab.dev" class="link link--underline">contact@omegalab.dev</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cell__4 cell__m-6 cell__s-12">
+				<ul class="list list--left list--footer">
+					<li class="list__item list__title list__title--adaptive">
+						<a href="/" class="link">Privacy Policy</a>
+					</li>
+					<li class="list__item list__title list__title--adaptive">
+						<a href="/" class="link">Cookie Policy</a>
+					</li>
+					<li class="list__item list__title list__title--adaptive">
+						<a href="/" class="link">Terms and Conditions</a>
+					</li>
+					<li class="list__item list__title list__title--adaptive">
+						<a href="/" class="link">Acceptable use policy</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cell__4 cell__m-6 cell__s-12">
+				<ul class="list list--left list--footer">
+					<li class="list__item list__item--m list__title list__title--adaptive">
+						Amsterdam, the Netherlands <br>
+						Strawinskylaan 1431, 1077 XX
+					</li>
+					<li class="list__item list__title list__title--adaptive">VAT 861621220.В.01</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">&copy;&nbsp;2020 Omega Lab B.V.</div>
+	</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

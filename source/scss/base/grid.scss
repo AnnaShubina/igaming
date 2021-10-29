@@ -1,0 +1,91 @@
+@use "sass:math";
+
+.layout {
+	width: 100%;
+	min-width: 320px;
+	max-width: 1180px;
+	padding: 0 24px;
+	margin: 0 auto;
+	@include media(from, l) {
+		padding: 0 30px;
+	}
+}
+
+.layout--s {
+	max-width: 1140px;
+}
+
+.layout--m {
+	max-width: 1240px;
+}
+
+.layout--l {
+	max-width: 1300px;
+}
+
+.cells {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.cells--center {
+	justify-content: center;
+}
+
+.cells--indent {
+	margin: -24px -12px;
+
+	& > [class^="cell_"] {
+		padding: 24px 12px;
+	}
+}
+
+.cells--indent-x {
+	margin: 0 -12px;
+
+	& > [class^="cell_"] {
+		padding: 0 12px;
+	}
+}
+
+[class^="cell_"] {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+@for $i from 0 through $columns {
+	.cell__#{$i} {
+		width: math.div(100%, $columns) * $i;
+	}
+}
+
+@each $key, $val in $breakpoints-map {
+	@include media($key) {
+		@for $i from 0 through $columns {
+			.cell__#{$key}-#{$i} {
+				width: math.div(100%, $columns) * $i;
+			}
+		}
+	}
+}
+
+// Hidden Classes
+
+@each $key, $val in $breakpoints-map {
+	@include media($key) {
+		.hidden-to-#{$key} {
+			display: none !important;
+		}
+	}
+}
+
+@each $key, $val in $breakpoints-map {
+	@include media(from, $key) {
+		.hidden-from-#{$key} {
+			display: none !important;
+		}
+	}
+}
+

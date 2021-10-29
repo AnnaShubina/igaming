@@ -1,0 +1,33 @@
+.card {
+
+}
+
+.card--left {
+	margin-left: 42px;
+}
+
+.card--right {
+	margin-right: 71px;
+}
+
+.card--rightS {
+	margin-right: 30px;
+}
+
+.card__badge {
+	margin-bottom: 28px;
+}
+
+@include media(from, m) {
+	.card.moveRight {
+		.badge__rect {
+			transition: transform 0.4s ease;
+		}
+	}
+
+	.card.moveRight:hover {
+		.badge__rect {
+			transform: translateX(8px) skewX(-10deg);
+		}
+	}
+}
