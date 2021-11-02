@@ -1,20 +1,20 @@
 import Swiper from "../plugins/swiper.min";
 
 const swiperInit = (elem) => {
-	if (elem.classList.contains('slider--solutions')) {
-		return new Swiper('.slider--solutions .swiper-container', {
+	if (elem.classList.contains('slider--press')) {
+		return new Swiper('.slider--press .swiper-container', {
 			slidesPerView: 1,
+			spaceBetween: 26,
 			navigation: {
-				nextEl: '.slider--solutions .swiper-button-next',
-				prevEl: '.slider--solutions .swiper-button-prev',
+				nextEl: '.slider--press .swiper-button-next',
+				prevEl: '.slider--press .swiper-button-prev',
 			},
 			breakpoints: {
+				960: {
+					slidesPerView: 3,
+				},
 				640: {
-					slidesPerView: 'auto',
-					spaceBetween: 30,
-					centeredSlides: true,
-					initialSlide: 1,
-					allowTouchMove: false,
+					slidesPerView: 2,
 				},
 			}
 		});
@@ -30,15 +30,6 @@ const swiperInit = (elem) => {
 			navigation: {
 				nextEl: '.slider--cases .swiper-button-next',
 			},
-		});
-	}
-	if (elem.classList.contains('slider--business')) {
-		return new Swiper('.slider--business .swiper-container', {
-			slidesPerView: 'auto',
-			resistance: true,
-			resistanceRatio: 0,
-			freeMode: true,
-			freeModeMomentumBounce: false,
 		});
 	}
 }

@@ -13,4 +13,7 @@
 
 .iconCard--left {
 	margin-left: 20px;
+	@include media(l) {
+		margin-left: 0;
+	}
 }

@@ -10,3 +10,29 @@
 .link--underline {
 	text-decoration: underline;
 }
+
+.link--brand {
+	color: $color-brand;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.link--icon {
+	padding-right: 18px;
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		width: 13px;
+		height: 13px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5303 7.03033C12.8232 6.73744 12.8232 6.26256 12.5303 5.96967L7.75736 1.1967C7.46447 0.903806 6.98959 0.903806 6.6967 1.1967C6.40381 1.48959 6.40381 1.96447 6.6967 2.25736L10.9393 6.5L6.6967 10.7426C6.40381 11.0355 6.40381 11.5104 6.6967 11.8033C6.98959 12.0962 7.46447 12.0962 7.75736 11.8033L12.5303 7.03033ZM0 7.25H12V5.75H0V7.25Z' fill='%230066FF'/%3E%3C/svg%3E%0A");
+	}
+}

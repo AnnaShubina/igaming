@@ -2,21 +2,33 @@
 	border-radius: $border-radius;
 	box-shadow: 0 3px 30px rgba(0, 28, 71, 0.1);
 	background: linear-gradient(180deg, #FFFFFF 36.46%, #FFF7F1 100%);
-	padding: 20px 40px 28px;
+	padding: 40px 50px 20px;
 	color: $color-gray;
 	width: 100%;
 	max-width: 634px;
 	min-height: 595px;
-	display: flex;
-	flex-direction: column;
 	@include media(m) {
 		max-width: 100%;
-		min-height: 656px;
+		min-height: unset;
 	}
 	@include media(s) {
 		font-size: 15px;
-		padding: 0 17px 16px 24px;
+		padding: 16px 15px 32px 24px;
+
+		& .fz-16 {
+			font-size: 16px;
+		}
 	}
+}
+
+.cardBox--flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.cardBox--s {
+	max-width: 555px;
+	min-height: 512px;
 }
 
 .cardBox--back {
@@ -29,7 +41,6 @@
 }
 
 .cardBox__item {
-	display: flex;
 	padding: 20px 0;
 	@include media(s) {
 		display: block;
@@ -37,28 +48,29 @@
 	}
 }
 
-.cardBox__item:nth-child(3) {
-	margin-top: auto;
-	min-height: 118px;
-	@include media(s) {
-		min-height: 144px;
-	}
-}
-
 .cardBox__item--border {
 	border-top: 1px solid $color-border;
 }
 
-.cardBox__price:not(:last-child) {
-	margin-right: 56px;
+.cardBox__item--middle {
+	border-top: 1px solid $color-border;
+	border-bottom: 1px solid $color-border;
+	@include media(s) {
+		margin-right: 17px;
+	}
+}
+
+.cardBox__item--wide {
+	margin-right: -10px;
 	@include media(m) {
 		margin-right: 0;
 	}
 }
 
-.cardBox__price {
-	@include media(s) {
-		margin-top: -10px;
+.cardBox__item--wideExtra {
+	margin-right: -22px;
+	@include media(m) {
+		margin-right: 0;
 	}
 }
 
@@ -72,50 +84,110 @@
 }
 
 .cardBox__title {
-	margin-bottom: 8px;
+	@include clear-title;
+	line-height: 1.1;
+	font-size: 32px;
+	color: $color-text;
 	@include media(s) {
-		margin-bottom: -16px;
+		font-size: 24px;
 	}
 }
 
-.cardBox__left {
-	width: 98px;
-	padding-left: 6px;
-	flex-shrink: 0;
-	@include media(s) {
-		width: 100%;
-		padding-left: 0;
-		margin-bottom: 16px;
+.cardBox__title--wide {
+	margin-right: -30px;
+	@include media(m) {
+		margin-right: 0;
 	}
 }
 
-.cardBox__right {
-	flex-grow: 1;
-	padding-right: 5px;
-	@include media(s) {
-		padding-right: 0;
-	}
-}
-
-.cardBox__right--s {
-	padding-right: 25px;
-}
-
-.cardBox__right--xs {
-	padding-right: 40px;
-}
 
 .cardBox__back {
 	width: 100%;
 	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: $border-radius;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		vertical-align: middle;
+		border-radius: $border-radius;
+	}
+}
+
+.cardBox__row {
+	display: flex;
+	@include media(s) {
+		display: block;
+	}
+}
+
+.cardBox__rowItem {
+	max-width: 243px;
+
+	svg {
+		margin-right: 8px;
+		flex-shrink: 0;
+	}
+}
+
+.cardBox__rowItem:not(:last-child) {
+	margin-right: 56px;
+	@include media(s) {
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+}
+
+.cardBox__rowItem--fix {
+	width: 50%;
+	max-width: 100%;
+	&:not(:last-child) {
+		margin-right: 15px;
+		@include media(s) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	@include media(s) {
+		width: 100%;
+	}
+}
+
+.cardBox__rowItem--fixL {
+	width: 60%;
+	max-width: 100%;
+	&:not(:last-child) {
+		margin-right: 15px;
+		@include media(s) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	@include media(s) {
+		width: 100%;
+	}
+}
+
+.cardBox__footer {
+	margin-bottom: 60px;
+	margin-top: auto;
+
+	.btn {
+		font-size: 16px;
+		@include media(s) {
+			font-size: 14px;
+			width: calc(100% + 23px);
+			margin-left: -16px;
+		}
+	}
+
+	@include media(s) {
+		margin-bottom: 8px;
+	}
+
 }
 
 .cardBoxWrap {
-	padding-top: 80px;
+	padding-top: 30px;
 
 	.cardBox--back {
 		position: absolute;
@@ -123,6 +195,10 @@
 		left: 0;
 		height: calc(100% - 60px);
 		z-index: -1;
+	}
+
+	.cardBox--back.cardBox--s {
+		height: 512px;
 	}
 
 	@include media(m) {

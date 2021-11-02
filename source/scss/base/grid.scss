@@ -34,10 +34,18 @@
 }
 
 .cells--indent {
-	margin: -24px -12px;
+	margin: -12px;
 
 	& > [class^="cell_"] {
-		padding: 24px 12px;
+		padding: 12px;
+	}
+}
+
+.cells--indent-ly {
+	margin: -40px -12px;
+
+	& > [class^="cell_"] {
+		padding: 40px 12px;
 	}
 }
 
@@ -53,6 +61,10 @@
 	display: inline-block;
 	vertical-align: top;
 	width: 100%;
+}
+
+.left__1 {
+	margin-left: 71px;
 }
 
 @for $i from 0 through $columns {

@@ -2,16 +2,33 @@
 
 }
 
+.card--s {
+	max-width: 226px;
+}
+
+.card--m {
+	max-width: 260px;
+}
+
 .card--left {
 	margin-left: 42px;
+	@include media(l) {
+		margin-left: 0;
+	}
 }
 
 .card--right {
 	margin-right: 71px;
+	@include media(s) {
+		margin-right: 0;
+	}
 }
 
 .card--rightS {
 	margin-right: 30px;
+	@include media(s) {
+		margin-right: 0;
+	}
 }
 
 .card__badge {

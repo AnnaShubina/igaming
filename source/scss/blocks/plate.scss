@@ -5,6 +5,21 @@
 	padding: 24px 7px 32px 32px;
 }
 
+.plate--s {
+	padding: 20px 20px 30px;
+	box-shadow: 0 3px 15px rgba(0, 28, 71, 0.1);
+	@include media(s) {
+		padding: 10px 20px 20px;
+		min-height: 220px;
+	}
+}
+
+.plate--center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .plate--grow {
 	position: relative;
 	background-color: transparent;
@@ -40,8 +55,35 @@
 	margin-top: 10px;
 }
 
+.plate__content {
+	margin-top: 8px;
+	font-size: 18px;
+	color: $color-text-dark;
+	text-align: center;
+	@include media(s) {
+		font-size: 14px;
+	}
+}
+
+.plate__content--s {
+	max-width: 220px;
+	@include media(s) {
+		max-width: 100%;
+	}
+}
+
 .plate__title {
 	font-weight: 600;
 	font-size: 20px;
 	margin-top: 15px;
+}
+
+.plate__pic {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	object-fit: contain;
+	@include media(s) {
+		max-width: 198px;
+	}
 }

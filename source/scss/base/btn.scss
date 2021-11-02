@@ -1,7 +1,7 @@
 .btn {
 	@include clear-btn;
 	padding: 10px 20px;
-	height: 40px;
+	min-height: 40px;
 	font-size: 15px;
 	color: $color-white;
 	border-radius: 25px;
@@ -9,7 +9,6 @@
 	transition: background-color 0.15s ease-in-out;
 	font-weight: bold;
 	line-height: 1.2;
-	white-space: nowrap;
 
 	&:hover {
 		background-color: $color-brand-dark;

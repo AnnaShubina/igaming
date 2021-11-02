@@ -20,6 +20,14 @@
 	color: $color-brand;
 }
 
+.text-dark {
+	color: $color-text;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
 .flex-center {
 	display: flex;
 	align-items: center;
@@ -68,6 +76,10 @@
 
 .mt-12 {
 	margin-top: 12px;
+}
+
+.mt-8 {
+	margin-top: 8px;
 }
 
 .fz-18 {
