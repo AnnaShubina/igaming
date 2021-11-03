@@ -1,19 +1,34 @@
 .iconCard {
 	display: flex;
+	@include media(s) {
+		width: 224px;
+		margin: 0 auto;
+	}
 }
 
 .iconCard__pic {
 	flex-shrink: 0;
 	margin-right: 16px;
+	@include media(s) {
+		width: 24px;
+		margin-right: 12px;
+	}
 }
 
 .iconCard__text {
 	font-size: 18px;
+	@include media(s) {
+		font-size: 16px;
+		line-height: 1.2;
+	}
 }
 
 .iconCard--left {
 	margin-left: 20px;
 	@include media(l) {
 		margin-left: 0;
+	}
+	@include media(s) {
+		margin: 0 auto;
 	}
 }

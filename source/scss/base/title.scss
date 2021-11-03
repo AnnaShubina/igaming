@@ -43,6 +43,16 @@
 
 .title--thinS {
 	max-width: 230px;
+	@include media(s) {
+		max-width: 100%;
+	}
+}
+
+.title--wide-s {
+	@include media(s) {
+		margin-left: -2px;
+		margin-right: -2px;
+	}
 }
 
 .title--gradient {

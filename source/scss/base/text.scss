@@ -10,6 +10,9 @@
 
 .text--l {
 	font-size: 22px;
+	@include media(s) {
+		font-size: 15px;
+	}
 }
 
 .text-s {

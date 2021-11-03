@@ -3,9 +3,9 @@
 	position: relative;
 	z-index: 1;
 	@include media(s) {
-		padding: 48px 36px 60px;
+		padding: 48px 36px 63px;
 		width: calc(100% + 16px);
-		margin: 0 -8px -153px;
+		margin: 16px -8px 0;
 	}
 }
 

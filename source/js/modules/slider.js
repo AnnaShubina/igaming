@@ -32,6 +32,28 @@ const swiperInit = (elem) => {
 			},
 		});
 	}
+	if (elem.classList.contains('slider--challenges')) {
+		return new Swiper('.slider--challenges .swiper-container', {
+			slidesPerView: 1,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			navigation: {
+				nextEl: '.slider--challenges .swiper-button-next',
+				prevEl: '.slider--challenges .swiper-button-prev',
+			},
+		});
+	}
+	if (elem.classList.contains('slider--cards')) {
+		return new Swiper('.slider--cards .swiper-container', {
+			slidesPerView: 'auto',
+			resistance: true,
+			resistanceRatio: 0,
+			freeMode: true,
+			freeModeMomentumBounce: false,
+		});
+	}
 }
 
 export default swiperInit;

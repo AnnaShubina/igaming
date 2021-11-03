@@ -4,10 +4,20 @@
 
 .card--s {
 	max-width: 226px;
+	@include media(s) {
+		max-width: 100%;
+	}
 }
 
 .card--m {
 	max-width: 260px;
+	@include media(s) {
+		max-width: 100%;
+	}
+}
+
+.card--radius {
+	border-radius: $border-radius;
 }
 
 .card--left {
@@ -31,8 +41,16 @@
 	}
 }
 
+.card--224 {
+	width: 224px;
+}
+
+.card--277 {
+	width: 277px;
+}
+
 .card__badge {
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 }
 
 @include media(from, m) {

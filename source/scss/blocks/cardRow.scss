@@ -1,0 +1,40 @@
+.cardRow {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: -20px;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
+		vertical-align: middle;
+		flex-shrink: 0;
+	}
+}
+
+.cardRow__item {
+	padding: 20px;
+	width: 100%;
+	max-width: 662px;
+}
+
+.cardRow__item--l {
+	width: 100%;
+	max-width: 836px;
+}
+
+.cardRow__item--m {
+	width: 100%;
+	max-width: 624px;
+}
+
+.cardRow__item--s {
+	width: 50%;
+	max-width: 418px;
+}
+
+.cardRow__item--flex {
+	display: flex;
+	align-items: flex-end;
+}

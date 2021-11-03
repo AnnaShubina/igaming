@@ -2,7 +2,11 @@
 	background-color: $color-back;
 	border-radius: $border-radius;
 	box-shadow: 0 3px 30px rgba(0, 28, 71, 0.1);
-	padding: 24px 7px 32px 32px;
+	padding: 24px 30px 15px 32px;
+	@include media(s) {
+		padding: 20px 24px;
+		min-height: 169px;
+	}
 }
 
 .plate--s {
@@ -52,7 +56,14 @@
 }
 
 .plate__text {
-	margin-top: 10px;
+	margin-top: 5px;
+	@include media(s) {
+		margin-top: 10px;
+
+		&.text {
+			font-size: 18px;
+		}
+	}
 }
 
 .plate__content {
@@ -75,7 +86,19 @@
 .plate__title {
 	font-weight: 600;
 	font-size: 20px;
-	margin-top: 15px;
+	margin-top: 5px;
+}
+
+.plate__header {
+	@include media(s) {
+		display: flex;
+		align-items: center;
+
+		.plate__title {
+			margin-top: 0;
+			margin-left: 12px;
+		}
+	}
 }
 
 .plate__pic {

@@ -32,10 +32,10 @@ menuItems.forEach((item) => {
 if (window.innerWidth > 768) {
 	appearInit();
 
-	const casesWrap = document.querySelector('.js-cases');
-	const cases = document.querySelectorAll('.js-cases .cardBox');
-	cases.forEach((item) => {
-		const parallaxCase = new Parallax('x', 0.1, 10, 0, item, casesWrap, 0, 0);
-		parallaxCase.init();
-	})
+	// const casesWrap = document.querySelector('.js-cases');
+	// const cases = document.querySelectorAll('.js-cases .cardBox');
+	// cases.forEach((item) => {
+	// 	const parallaxCase = new Parallax('x', 0.1, 10, 0, item, casesWrap, 0, 0);
+	// 	parallaxCase.init();
+	// });
 }

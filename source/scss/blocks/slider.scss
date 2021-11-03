@@ -39,6 +39,9 @@
 	margin: -15px;
 	.swiper-container {
 		padding: 15px;
+		@include media(s) {
+			padding-top: 28px;
+		}
 	}
 
 	.swiper-wrapper {
@@ -68,7 +71,8 @@
 		}
 
 		@include media(s) {
-			right: 15px;
+			right: 10px;
+			top: -15px;
 		}
 
 		&:hover {
@@ -91,7 +95,7 @@
 		}
 
 		@include media(s) {
-			left: 15px;
+			left: 10px;
 		}
 	}
 }
@@ -111,7 +115,7 @@
 
 	.swiper-wrapper {
 		@include media(s) {
-			margin-top: -35px;
+			margin-top: 20px;
 		}
 	}
 
@@ -120,6 +124,62 @@
 		@include media(s) {
 			margin-right: 15px;
 			top: -10px;
+		}
+	}
+}
+
+.slider--challenges {
+	position: relative;
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		position: absolute;
+		right: -20px;
+		top: 135px;
+		&:after {
+			background-image: url("data:image/svg+xml,%3Csvg width='44' height='24' viewBox='0 0 44 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM43.0607 13.0607C43.6464 12.4749 43.6464 11.5251 43.0607 10.9393L33.5147 1.3934C32.9289 0.807611 31.9792 0.807611 31.3934 1.3934C30.8076 1.97919 30.8076 2.92893 31.3934 3.51472L39.8787 12L31.3934 20.4853C30.8076 21.0711 30.8076 22.0208 31.3934 22.6066C31.9792 23.1924 32.9289 23.1924 33.5147 22.6066L43.0607 13.0607ZM2 13.5L42 13.5V10.5L2 10.5L2 13.5Z' fill='%23717171'/%3E%3C/svg%3E");
+		}
+
+		@include media(xxxl) {
+			right: -60px;
+		}
+
+		@include media(l) {
+			top: -40px;
+			right: 0;
+		}
+	}
+
+	.swiper-button-prev {
+		right: unset;
+		left: -20px;
+		&:after {
+			background-image: url("data:image/svg+xml,%3Csvg width='44' height='24' viewBox='0 0 44 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42 13.5C42.8284 13.5 43.5 12.8284 43.5 12C43.5 11.1716 42.8284 10.5 42 10.5V13.5ZM0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM42 10.5L2 10.5V13.5L42 13.5V10.5Z' fill='%23717171'/%3E%3C/svg%3E");
+		}
+
+		@include media(xxxl) {
+			left: -60px;
+		}
+
+		@include media(l) {
+			left: 0;
+		}
+	}
+}
+
+.slider--cards {
+	.swiper-container {
+		margin-top: 40px;
+	}
+
+	.swiper-slide {
+		display: flex;
+		width: auto;
+		.card {
+			flex-shrink: 0;
+			&:not(:last-child) {
+				margin-right: 24px;
+			}
 		}
 	}
 }

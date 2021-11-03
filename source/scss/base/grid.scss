@@ -41,11 +41,25 @@
 	}
 }
 
+.cells--indent-m {
+	margin: -16px -12px;
+
+	& > [class^="cell_"] {
+		padding: 16px 12px;
+	}
+}
+
 .cells--indent-ly {
 	margin: -40px -12px;
+	@include media(s) {
+		margin: -12px 0;
+	}
 
 	& > [class^="cell_"] {
 		padding: 40px 12px;
+		@include media(s) {
+			padding: 12px 0;
+		}
 	}
 }
 
@@ -65,6 +79,9 @@
 
 .left__1 {
 	margin-left: 71px;
+	@include media(l) {
+		margin-left: 0;
+	}
 }
 
 @for $i from 0 through $columns {
