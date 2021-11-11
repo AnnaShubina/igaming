@@ -2,7 +2,7 @@
 	border-radius: $border-radius;
 	box-shadow: 0 3px 30px rgba(0, 28, 71, 0.1);
 	background: linear-gradient(180deg, #FFFFFF 20.31%, #EEF5FF 100%);
-	padding: 40px 50px 20px;
+	padding: 40px 50px 0;
 	color: $color-gray;
 	width: 100%;
 	max-width: 634px;
@@ -13,7 +13,7 @@
 	}
 	@include media(s) {
 		font-size: 15px;
-		padding: 16px 15px 32px 24px;
+		padding: 16px 15px 12px 24px;
 
 		& .fz-16 {
 			font-size: 16px;

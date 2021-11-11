@@ -21,6 +21,15 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162707820-6"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-162707820-6');
+</script>
 <body class="disableOutline">
 <div class="sr-only">
 	<!-- inject:svg -->
@@ -182,6 +191,64 @@
 	<!-- endinject -->
 </div>
 <main class="main">
+	<div class="popup" id="form">
+		<div class="popup__overlay"></div>
+		<div class="popup__container">
+			<button class="link popup__close popup-close"><img src="img/close.svg" alt="close" width="25" height="24">
+			</button>
+			<div class="popup__title"></div>
+			<div class="popup__subtitle">Please, leave your contact details and we'll get in touch with you
+				shortly
+			</div>
+			<form action="#" class="form">
+				<div class="form__item">
+					<input type="text" placeholder="First name" class="formField">
+				</div>
+				<div class="form__item">
+					<input type="text" placeholder="Last name" class="formField">
+				</div>
+				<div class="form__item">
+					<input type="text" placeholder="Company name" class="formField">
+				</div>
+				<div class="form__item">
+					<div class="custom-select">
+						<select>
+							<option value="0">Position</option>
+							<option value="1">CEO/Founder</option>
+							<option value="2">Finance Director/CFO</option>
+							<option value="3">CMO/CCO/CRO/Account Director</option>
+							<option value="4">CPO/CTO</option>
+							<option value="5">Product Manager/Project Manager</option>
+							<option value="6">HR (mabager/director)</option>
+							<option value="7">Tender/Big Manager</option>
+							<option value="8">Office manager/General</option>
+							<option value="9">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="form__item">
+					<input type="text" placeholder="Phone" class="formField">
+				</div>
+				<div class="form__item">
+					<input type="email" placeholder="E-mail" class="formField">
+				</div>
+				<div class="form__footer">
+					<label class="option">
+						<input type="checkbox" checked class="visually-hidden">
+						<span class="option__element"></span>
+						<span class="option__label">
+									By submitting the form you <br> agree to the <a href="#" class="link text-brand" target="_blank">confidentiality policy</a>
+								</span>
+					</label>
+
+				</div>
+				<button class="btn btn--animate form__btn" data-text="Submit">
+					<span class="btn__label">Submit</span>
+					<span class="btn__bg"></span>
+				</button>
+			</form>
+		</div>
+	</div>
 	<section class="intro">
 		<header class="header">
 			<div class="layout layout--l">
@@ -197,7 +264,9 @@
 						<button class="nav__link" data-ref="contact">Contact us</button>
 					</nav>
 					<div class="header__right">
-						<div class="btn btn--outline hidden-to-s">Request a call</div>
+						<a href="https://meetings-eu1.hubspot.com/elizabeth-kalina/omegalab" target="_blank"
+							 class="btn btn--outline hidden-to-s">Request
+							a call</a>
 						<button class="header__toggle hidden-from-l js-menu-open">
 							<img src="img/burger.svg" alt="menu">
 						</button>
@@ -218,7 +287,9 @@
 								<button class="nav__link js-menu-close" data-ref="contact">Contact us</button>
 							</nav>
 						</div>
-						<div class="btn btn--outline">Request a call</div>
+						<a href="https://meetings-eu1.hubspot.com/elizabeth-kalina/omegalab" target="_blank"
+							 class="btn btn--outline">Request
+							a call</a>
 					</div>
 				</div>
 			</div>
@@ -230,7 +301,7 @@
 					<radialGradient id="paint0_radial_104:2383" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(458.5 434.5) rotate(89.9192) scale(493.592 520.857)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -242,7 +313,7 @@
 					<radialGradient id="paint0_radial_104:2384" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(468 444.5) rotate(89.8975) scale(388.851 409.409)">
 						<stop stop-color="#FA842E"/>
-						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -255,80 +326,14 @@
 						your product either
 						from scratch or&nbsp;join it&nbsp;at&nbsp;any stage to&nbsp;accelerate its release
 					</div>
-					<button class="btn btn--animate" data-text="Discuss project">
+					<button class="btn btn--animate js-popup-open" data-ref="form" data-text="Discuss project"
+									data-title="Would you like discuss your project and get an estimate?">
 						<span class="btn__label">Discuss project</span>
 						<span class="btn__bg"></span>
 					</button>
 				</div>
 				<div class="intro__pic">
-					<svg width="520" height="506" viewBox="0 0 520 506" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g filter="url(#filter0_b_273:336)">
-							<rect x="21" y="12" width="476" height="469" rx="100" fill="white" fill-opacity="0.4"/>
-						</g>
-						<g filter="url(#filter1_d_273:336)">
-							<path
-								d="M259.468 232.5C261.968 217.833 269.881 180.765 214.001 185.5C184.5 188 188.5 154.5 208.001 154.5C236.001 154.5 306.547 156.77 330.001 154.5C357 151.887 351.501 120.413 333.001 118C310.001 115 219.502 118 196.501 118C173.5 118 170.902 85 200.502 85C220.502 85 256.004 84.5 274.004 62"
-								stroke="white" stroke-width="5"/>
-						</g>
-						<path
-							d="M75.5 346.512C75.5 300.666 112.666 263.5 158.512 263.5H361.281C407.241 263.5 444.5 300.759 444.5 346.719C444.5 401.608 392.296 441.463 339.348 426.997L285.727 412.347C267.904 407.478 249.096 407.516 231.293 412.459L180.719 426.5C127.827 441.184 75.5 401.406 75.5 346.512Z"
-							fill="url(#paint0_linear_273:336)" stroke="white" stroke-width="5"/>
-						<path
-							d="M146.5 331C151.194 331 155 327.194 155 322.5V306C155 304.067 156.567 302.5 158.5 302.5H180.5C182.433 302.5 184 304.067 184 306V322.5C184 327.194 187.806 331 192.5 331H212.5C214.433 331 216 332.567 216 334.5V353C216 354.933 214.433 356.5 212.5 356.5H192.5C187.806 356.5 184 360.306 184 365V381C184 382.933 182.433 384.5 180.5 384.5H158.5C156.567 384.5 155 382.933 155 381V365C155 360.306 151.194 356.5 146.5 356.5H128C126.067 356.5 124.5 354.933 124.5 353V334.5C124.5 332.567 126.067 331 128 331H146.5Z"
-							stroke="white" stroke-width="5"/>
-						<path
-							d="M373.5 314.5C373.5 323.469 366.655 330.5 358.5 330.5C350.345 330.5 343.5 323.469 343.5 314.5C343.5 305.531 350.345 298.5 358.5 298.5C366.655 298.5 373.5 305.531 373.5 314.5Z"
-							stroke="white" stroke-width="5"/>
-						<path
-							d="M373.5 368.5C373.5 377.469 366.655 384.5 358.5 384.5C350.345 384.5 343.5 377.469 343.5 368.5C343.5 359.531 350.345 352.5 358.5 352.5C366.655 352.5 373.5 359.531 373.5 368.5Z"
-							stroke="white" stroke-width="5"/>
-						<path
-							d="M405.5 341.5C405.5 350.469 398.655 357.5 390.5 357.5C382.345 357.5 375.5 350.469 375.5 341.5C375.5 332.531 382.345 325.5 390.5 325.5C398.655 325.5 405.5 332.531 405.5 341.5Z"
-							stroke="white" stroke-width="5"/>
-						<path
-							d="M341.5 341.5C341.5 350.469 334.655 357.5 326.5 357.5C318.345 357.5 311.5 350.469 311.5 341.5C311.5 332.531 318.345 325.5 326.5 325.5C334.655 325.5 341.5 332.531 341.5 341.5Z"
-							stroke="white" stroke-width="5"/>
-						<path
-							d="M223.5 248C223.5 238.335 231.335 230.5 241 230.5H278C287.665 230.5 295.5 238.335 295.5 248V263.5H223.5V248Z"
-							fill="url(#paint1_linear_273:336)" stroke="white" stroke-width="5"/>
-						<circle cx="93" cy="430" r="8" fill="#FFDCF9"/>
-						<circle cx="455" cy="74" r="8" fill="#FFCDCD"/>
-						<circle opacity="0.4" cx="455" cy="21" r="21" fill="#D8E7FF"/>
-						<circle cx="509" cy="42" r="11" fill="#FFDCF9"/>
-						<circle cx="21" cy="409" r="21" fill="#FFE6D3"/>
-						<circle cx="42" cy="495" r="11" fill="#FFF8B7"/>
-						<defs>
-							<filter id="filter0_b_273:336" x="19" y="10" width="480" height="473" filterUnits="userSpaceOnUse"
-											color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-								<feGaussianBlur in="BackgroundImage" stdDeviation="1"/>
-								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_273:336"/>
-								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_273:336" result="shape"/>
-							</filter>
-							<filter id="filter1_d_273:336" x="146.272" y="30.4383" width="234.804" height="232.482"
-											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-															 result="hardAlpha"/>
-								<feOffset/>
-								<feGaussianBlur stdDeviation="15"/>
-								<feComposite in2="hardAlpha" operator="out"/>
-								<feColorMatrix type="matrix" values="0 0 0 0 0.0115451 0 0 0 0 0.326266 0 0 0 0 0.554167 0 0 0 0.2 0"/>
-								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_273:336"/>
-								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_273:336" result="shape"/>
-							</filter>
-							<linearGradient id="paint0_linear_273:336" x1="149" y1="285.5" x2="396.5" y2="412"
-															gradientUnits="userSpaceOnUse">
-								<stop stop-color="#FFDABE"/>
-								<stop offset="1" stop-color="#B4DFFF"/>
-							</linearGradient>
-							<linearGradient id="paint1_linear_273:336" x1="236.647" y1="232.702" x2="286.06" y2="259.795"
-															gradientUnits="userSpaceOnUse">
-								<stop stop-color="#FFDABE"/>
-								<stop offset="1" stop-color="#B4DFFF"/>
-							</linearGradient>
-						</defs>
-					</svg>
+					<img src="img/intro-pic.svg" alt="" width="520" height="506">
 				</div>
 			</div>
 		</div>
@@ -343,18 +348,21 @@
 					<radialGradient id="paint0_radial_81:2073" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="#F8FBFF" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="#F8FBFF" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
 		</div>
 		<div class="box__decor hidden-from-s">
 			<svg width="396" height="384" viewBox="0 0 396 384" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M26.8692 80.2467C49.5613 45.5618 84.8401 21.0484 125.262 11.8792L155.572 5.00357C188.915 -2.56001 223.753 -1.25372 256.451 8.73634C335.54 32.9002 391.174 104.234 395.059 186.842L395.357 193.166C397.698 242.94 379.425 291.48 344.841 327.354C312.862 360.526 269.439 380.26 223.418 382.536L218.643 382.773C160.434 385.651 104.037 362.094 65.1707 318.665L56.1937 308.635C37.0019 287.19 22.621 261.887 14.0167 234.425L8.09906 215.538C-6.19894 169.904 0.68789 120.265 26.8692 80.2467Z" fill="url(#paint0_radial_579:1180)" fill-opacity="0.15"/>
+				<path
+					d="M26.8692 80.2467C49.5613 45.5618 84.8401 21.0484 125.262 11.8792L155.572 5.00357C188.915 -2.56001 223.753 -1.25372 256.451 8.73634C335.54 32.9002 391.174 104.234 395.059 186.842L395.357 193.166C397.698 242.94 379.425 291.48 344.841 327.354C312.862 360.526 269.439 380.26 223.418 382.536L218.643 382.773C160.434 385.651 104.037 362.094 65.1707 318.665L56.1937 308.635C37.0019 287.19 22.621 261.887 14.0167 234.425L8.09906 215.538C-6.19894 169.904 0.68789 120.265 26.8692 80.2467Z"
+					fill="url(#paint0_radial_579:1180)" fill-opacity="0.15"/>
 				<defs>
-					<radialGradient id="paint0_radial_579:1180" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(194.799 198.883) rotate(106.72) scale(200.09 216.382)">
+					<radialGradient id="paint0_radial_579:1180" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(194.799 198.883) rotate(106.72) scale(200.09 216.382)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="#F8FBFF" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="#F8FBFF" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -407,8 +415,10 @@
 				<h2 class="title box__header box__header--s">Why Choose OmegaLab?</h2>
 				<div class="cells cells--indent-x cells--center">
 					<div class="cell__8 cell__m-10 cell__s-12">
-						<p class="text">OmegaLab&rsquo;s experts have been <br class="hidden-from-s"> helping ambitious iGaming businesses to&nbsp;engage and
-							thrill their players <br class="hidden-from-s"> for 15&nbsp;years, through a&nbsp;combination of&nbsp;technological superiority,
+						<p class="text">OmegaLab&rsquo;s experts have been <br class="hidden-from-s"> helping ambitious iGaming
+							businesses to&nbsp;engage and
+							thrill their players <br class="hidden-from-s"> for 15&nbsp;years, through a&nbsp;combination of&nbsp;technological
+							superiority,
 							beautiful design and sound regulatory compliance.</p>
 					</div>
 				</div>
@@ -424,7 +434,8 @@
 						</div>
 						<div class="title-s">Hassle-free iGaming</div>
 						<div class="fz-18 text-gray mt-12">
-							We&rsquo;re experts in&nbsp;what we&nbsp;do, <br class="hidden-from-s"> so&nbsp;you can be&nbsp;sure that we&nbsp;will <br class="hidden-from-s"> be&nbsp;a
+							We&rsquo;re experts in&nbsp;what we&nbsp;do, <br class="hidden-from-s"> so&nbsp;you can be&nbsp;sure that
+							we&nbsp;will <br class="hidden-from-s"> be&nbsp;a
 							perfect partner to&nbsp;make <br class="hidden-from-s"> your dreams a&nbsp;reality.
 						</div>
 					</div>
@@ -437,7 +448,7 @@
 								<use xlink:href="#quality"></use>
 							</svg>
 						</div>
-						<div class="title-s">Highly-skilled developers</div>
+						<div class="title-s">Highly skilled developers</div>
 						<div class="fz-18 text-gray mt-12">
 							Our blend of&nbsp;skills in&nbsp;front and back end, coupled with streamlined development methodologies,
 							help create a&nbsp;product which fits the market.
@@ -454,7 +465,8 @@
 						</div>
 						<div class="title-s">Rapid back-end scaling</div>
 						<div class="fz-18 text-gray mt-12">
-							Our experience in&nbsp;networking <br class="hidden-from-s"> technologies, paired with <br class="hidden-from-s"> excellent skills, helps scale your with lightning speed.
+							Our experience in&nbsp;networking <br class="hidden-from-s"> technologies, paired with <br
+							class="hidden-from-s"> excellent skills, helps scale your with lightning speed.
 						</div>
 					</div>
 				</div>
@@ -478,7 +490,7 @@
 					<source media="(min-width:640px)" srcset="img/app.svg">
 					<img src="img/app-mob.svg" alt="picture">
 				</picture>
-				<img src="img/wheel.svg" alt="picture" class="box__wheel" width="466" height="466">
+				<img src="img/wheel.svg" alt="picture" class="box__wheel rotate" width="466" height="466">
 				<div class="box__decor hidden-to-s">
 					<svg width="837" height="794" viewBox="0 0 837 794" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<ellipse cx="418.5" cy="397" rx="418.5" ry="397" fill="url(#paint0_radial_104:2798)" fill-opacity="0.4"/>
@@ -486,18 +498,20 @@
 							<radialGradient id="paint0_radial_104:2798" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 															gradientTransform="translate(418.5 397) rotate(89.8974) scale(347.298 366.106)">
 								<stop stop-color="#FA842E"/>
-								<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 							</radialGradient>
 						</defs>
 					</svg>
 				</div>
 				<div class="box__decor hidden-from-s">
 					<svg width="513" height="503" viewBox="0 0 513 503" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<ellipse cx="256.5" cy="251.5" rx="256.5" ry="251.5" fill="url(#paint0_radial_598:3889)" fill-opacity="0.4"/>
+						<ellipse cx="256.5" cy="251.5" rx="256.5" ry="251.5" fill="url(#paint0_radial_598:3889)"
+										 fill-opacity="0.4"/>
 						<defs>
-							<radialGradient id="paint0_radial_598:3889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256.5 251.5) rotate(89.9007) scale(220.014 224.388)">
+							<radialGradient id="paint0_radial_598:3889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+															gradientTransform="translate(256.5 251.5) rotate(89.9007) scale(220.014 224.388)">
 								<stop stop-color="#FA842E"/>
-								<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 							</radialGradient>
 						</defs>
 					</svg>
@@ -509,7 +523,7 @@
 							<radialGradient id="paint0_radial_104:2797" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 															gradientTransform="translate(477 451.5) rotate(89.9191) scale(512.905 541.873)">
 								<stop stop-color="#169BFC"/>
-								<stop offset="1" stop-color="white" stop-opacity="0"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 							</radialGradient>
 						</defs>
 					</svg>
@@ -518,9 +532,10 @@
 					<svg width="418" height="443" viewBox="0 0 418 443" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<ellipse cx="209" cy="221.5" rx="209" ry="221.5" fill="url(#paint0_radial_598:3888)" fill-opacity="0.4"/>
 						<defs>
-							<radialGradient id="paint0_radial_598:3888" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(209 221.5) rotate(89.9278) scale(251.624 237.424)">
+							<radialGradient id="paint0_radial_598:3888" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+															gradientTransform="translate(209 221.5) rotate(89.9278) scale(251.624 237.424)">
 								<stop stop-color="#169BFC"/>
-								<stop offset="1" stop-color="white" stop-opacity="0"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 							</radialGradient>
 						</defs>
 					</svg>
@@ -627,7 +642,8 @@
 								</div>
 								<div class="card card--277">
 									<div class="title-xs">Payment gateway</div>
-									<div class="text-s text-gray mt-8">Cross-platform solution for paying out funds to&nbsp;customers using
+									<div class="text-s text-gray mt-8">Cross-platform solution for paying out funds to&nbsp;customers
+										using
 										bank cards,alternative payment systems and terminals.
 									</div>
 									<a href="/" class="link link--icon link--brand">Learn more</a>
@@ -641,7 +657,8 @@
 								</div>
 								<div class="card card--224">
 									<div class="title-xs">Multi-device support</div>
-									<div class="text-s text-gray mt-8">Cross-device support, supported web, mobile, native applications, etc
+									<div class="text-s text-gray mt-8">Cross-device support, supported web, mobile, native applications,
+										etc
 									</div>
 									<a href="/" class="link link--icon link--brand">Learn more</a>
 								</div>
@@ -676,7 +693,7 @@
 							<radialGradient id="paint0_radial_104:2806" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 															gradientTransform="translate(415 393) rotate(89.9192) scale(446.448 471.44)">
 								<stop stop-color="#169BFC"/>
-								<stop offset="1" stop-color="white" stop-opacity="0"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 							</radialGradient>
 						</defs>
 					</svg>
@@ -688,7 +705,7 @@
 							<radialGradient id="paint0_radial_104:2807" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 															gradientTransform="translate(423 401.5) rotate(89.8975) scale(351.235 370.043)">
 								<stop stop-color="#FA842E"/>
-								<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 							</radialGradient>
 						</defs>
 					</svg>
@@ -697,20 +714,23 @@
 					<svg width="418" height="443" viewBox="0 0 418 443" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<ellipse cx="209" cy="221.5" rx="209" ry="221.5" fill="url(#paint0_radial_598:3888)" fill-opacity="0.4"/>
 						<defs>
-							<radialGradient id="paint0_radial_598:3888" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(209 221.5) rotate(89.9278) scale(251.624 237.424)">
+							<radialGradient id="paint0_radial_598:3888" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+															gradientTransform="translate(209 221.5) rotate(89.9278) scale(251.624 237.424)">
 								<stop stop-color="#169BFC"/>
-								<stop offset="1" stop-color="white" stop-opacity="0"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 							</radialGradient>
 						</defs>
 					</svg>
 				</div>
 				<div class="box__decor2 hidden-from-s">
 					<svg width="513" height="503" viewBox="0 0 513 503" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<ellipse cx="256.5" cy="251.5" rx="256.5" ry="251.5" fill="url(#paint0_radial_598:3889)" fill-opacity="0.4"/>
+						<ellipse cx="256.5" cy="251.5" rx="256.5" ry="251.5" fill="url(#paint0_radial_598:3889)"
+										 fill-opacity="0.4"/>
 						<defs>
-							<radialGradient id="paint0_radial_598:3889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256.5 251.5) rotate(89.9007) scale(220.014 224.388)">
+							<radialGradient id="paint0_radial_598:3889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+															gradientTransform="translate(256.5 251.5) rotate(89.9007) scale(220.014 224.388)">
 								<stop stop-color="#FA842E"/>
-								<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+								<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 							</radialGradient>
 						</defs>
 					</svg>
@@ -831,7 +851,8 @@
 								</div>
 								<div class="card card--224">
 									<div class="title-xs">Player analytics</div>
-									<div class="text-s text-gray mt-8">We&nbsp;analyze the players&rsquo; data and behavior in&nbsp;order to&nbsp;develop
+									<div class="text-s text-gray mt-8">We&nbsp;analyze the players&rsquo; data and behavior in&nbsp;order
+										to&nbsp;develop
 										the product
 									</div>
 									<a href="/" class="link link--icon link--brand">Learn more</a>
@@ -873,96 +894,164 @@
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/holland.png" srcset="img/press/holland@2x.png 2x" alt="holland fintech"
-										 class="plate__pic">
-								<div class="plate__content plate__content--s">What Should A&nbsp;Reliable Software Development Partner&nbsp;Be?</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/sigma.png" srcset="img/press/sigma@2x.png 2x" alt="sigma" class="plate__pic">
-								<div class="plate__content plate__content--s">OmegaLab expands Fintech solutions for European market
+							<a
+								href="https://hollandfintech.com/2021/07/omegalab-what-should-a-reliable-software-development-partner-be"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--top">
+										<picture>
+											<source media="(min-width:640px)" srcset="img/press/holland.svg">
+											<img src="img/press/holland-mob.svg" alt="holland fintech">
+										</picture>
+									</div>
+									<div class="plate__content plate__content--s">What Should A&nbsp;Reliable Software Development Partner&nbsp;Be?</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/holland.png" srcset="img/press/holland@2x.png 2x" alt="holland fintech"
-										 class="plate__pic">
-								<div class="plate__content">9&nbsp;Reasons Why Russia Is&nbsp;The Best Place For Your Next Outsource
-									Software
-									Development Project Right Now!
+							<a
+								href="https://hollandfintech.com/2021/07/omegalab-what-should-a-reliable-software-development-partner-be"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topL">
+										<img src="img/press/sigma.svg" alt="sigma">
+									</div>
+									<div class="plate__content plate__content--s">OmegaLab expands Fintech solutions for European market
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/crunchbase.png" srcset="img/press/crunchbase@2x.png 2x" alt="crunchbase"
-										 class="plate__pic">
-								<div class="plate__content">How preparing for the festive period is&nbsp;similar to&nbsp;an&nbsp;outsourcing
-									development project?
+							<a
+								href="https://hollandfintech.com/2021/06/omegalab-9-reasons-why-russia-is-the-best-place-for-your-next-outsource-software-development-project-right-now/?utm_source=Mailchimp&utm_medium=email&utm_campaign=HFT%20Network%20News&utm_content=insights"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--top">
+										<img src="img/press/holland.svg" alt="holland fintech">
+									</div>
+									<div class="plate__content">9&nbsp;Reasons Why Russia Is&nbsp;The Best Place For Your Next Outsource
+										Software
+										Development Project Right Now!
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/efn.png" srcset="img/press/efn@2x.png 2x" alt="efn"
-										 class="plate__pic">
-								<div class="plate__content plate__content--s">Why is&nbsp;Java so&nbsp;popular in&nbsp;commercial
-									development?
+							<a
+								href="https://hollandfintech.com/2021/06/omegalab-9-reasons-why-russia-is-the-best-place-for-your-next-outsource-software-development-project-right-now/?utm_source=Mailchimp&utm_medium=email&utm_campaign=HFT%20Network%20News&utm_content=insights"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topXL">
+										<img src="img/press/crunchbase.svg" alt="crunchbase">
+									</div>
+									<div class="plate__content">How preparing for the festive period is&nbsp;similar to&nbsp;an&nbsp;outsourcing
+										development project?
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/sbc.png" srcset="img/press/sbc@2x.png 2x" alt="efn"
-										 class="plate__pic">
-								<div class="plate__content plate__content--s">OmegaLab expands Fintech solutions for European market
+							<a href="https://fintechnavigator.org/why-is-java-so-popular-in-commercial-development" target="_blank"
+								 class="plateWrap plate plate--s plate--center">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--l plate__pic--topS">
+										<picture>
+											<source media="(min-width:640px)" srcset="img/press/efn.svg">
+											<img src="img/press/efn-mob.svg" alt="efn">
+										</picture>
+									</div>
+									<div class="plate__content plate__content--s">Why is&nbsp;Java so&nbsp;popular in&nbsp;commercial
+										development?
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/igb.png" srcset="img/press/igb@2x.png 2x" alt="igb"
-										 class="plate__pic">
-								<div class="plate__content">OmegaLab expands technology software service for igaming</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/medium.png" srcset="img/press/medium@2x.png 2x" alt="medium"
-										 class="plate__pic">
-								<div class="plate__content">2020 in&nbsp;review: Software Development industry trends and changes &amp;&nbsp;the
-									outlook for 2021
+							<a
+								href="https://www.sbcnews.co.uk/technology/2020/12/09/omegalab-expands-fintech-solutions-for-european-market/?amp=1"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topL plate__pic--topMob">
+										<picture>
+											<source media="(min-width:640px)" srcset="img/press/sbc.svg">
+											<img src="img/press/sbc-mob.svg" alt="sbc">
+										</picture>
+									</div>
+									<div class="plate__content plate__content--s">OmegaLab expands Fintech solutions for European market
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/medium.png" srcset="img/press/medium@2x.png 2x" alt="medium"
-										 class="plate__pic">
-								<div class="plate__content">Remote working 101: why it&rsquo;s so&nbsp;effective and what you need to&nbsp;do&nbsp;to&nbsp;create
-									a&nbsp;successful remote working environment
+							<a
+								href="https://igamingbusiness.com/company-news/omegalab-expands-technology-software-service-for-igaming"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--top plate__pic--topMob">
+										<picture>
+											<source media="(min-width:640px)" srcset="img/press/igb.svg">
+											<img src="img/press/igb-mob.svg" alt="igb">
+										</picture>
+									</div>
+									<div class="plate__content">OmegaLab expands technology software service for igaming</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/medium.png" srcset="img/press/medium@2x.png 2x" alt="medium"
-										 class="plate__pic">
-								<div class="plate__content">Advantages and disadvantages of&nbsp;outsourcing your software development
+							<a
+								href="https://omegalab.medium.com/2020-in-review-software-development-industry-trends-and-changes-the-outlook-for-2021-65374a47fc02"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topXL">
+										<img src="img/press/medium.svg" alt="medium">
+									</div>
+									<div class="plate__content">2020 in&nbsp;review: Software Development industry trends and changes
+										&amp;&nbsp;the
+										outlook for 2021
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="plate plate--s plate--center">
-								<img src="img/press/medium.png" srcset="img/press/medium@2x.png 2x" alt="medium"
-										 class="plate__pic">
-								<div class="plate__content">The urgent integration of&nbsp;a&nbsp;project team for a&nbsp;public-sector
-									client
+							<a
+								href="https://omegalab.medium.com/remote-working-101-why-its-so-effective-and-what-you-need-to-do-to-create-a-successful-remote-d2e5d8685605"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topXL">
+										<img src="img/press/medium.svg" alt="medium">
+									</div>
+									<div class="plate__content">Remote working 101: why it&rsquo;s so&nbsp;effective and what you need to&nbsp;do&nbsp;to&nbsp;create
+										a&nbsp;successful remote working environment
+									</div>
 								</div>
-							</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="https://omegalab.medium.com/advantages-and-disadvantages-of-outsourcing-your-software-development-6620f43e95f"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topXL">
+										<img src="img/press/medium.svg" alt="medium">
+									</div>
+									<div class="plate__content">Advantages and disadvantages of&nbsp;outsourcing your software development
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="https://omegalab.medium.com/the-urgent-integration-of-a-project-team-for-a-public-sector-client-9571a344f07c"
+								target="_blank" class="plateWrap">
+								<div class="plate plate--s plate--center">
+									<div class="plate__pic plate__pic--topXL">
+										<img src="img/press/medium.svg" alt="medium">
+									</div>
+									<div class="plate__content">The urgent integration of&nbsp;a&nbsp;project team for a&nbsp;public-sector
+										client
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -977,7 +1066,7 @@
 					<radialGradient id="paint0_radial_598:3621" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(841 190) rotate(89.6612) scale(215.844 955.361)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -989,7 +1078,7 @@
 					<radialGradient id="paint0_radial_598:3622" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(849 240.5) rotate(89.6565) scale(210.394 742.698)">
 						<stop stop-color="#FA842E"/>
-						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -998,9 +1087,10 @@
 			<svg width="513" height="503" viewBox="0 0 513 503" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="256.5" cy="251.5" rx="256.5" ry="251.5" fill="url(#paint0_radial_598:3889)" fill-opacity="0.4"/>
 				<defs>
-					<radialGradient id="paint0_radial_598:3889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256.5 251.5) rotate(89.9007) scale(220.014 224.388)">
+					<radialGradient id="paint0_radial_598:3889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(256.5 251.5) rotate(89.9007) scale(220.014 224.388)">
 						<stop stop-color="#FA842E"/>
-						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1009,9 +1099,10 @@
 			<svg width="418" height="443" viewBox="0 0 418 443" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="209" cy="221.5" rx="209" ry="221.5" fill="url(#paint0_radial_598:3888)" fill-opacity="0.4"/>
 				<defs>
-					<radialGradient id="paint0_radial_598:3888" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(209 221.5) rotate(89.9278) scale(251.624 237.424)">
+					<radialGradient id="paint0_radial_598:3888" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(209 221.5) rotate(89.9278) scale(251.624 237.424)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1024,7 +1115,9 @@
 				</div>
 				<div class="cell__5 cell__s-12 text-right s-text-center">
 					<div class="mt-8 hidden-from-s"></div>
-					<button class="btn btn--fix btn--animate" data-text="Game on">
+					<div class="mt-20 hidden-to-s"></div>
+					<button class="btn btn--fix btn--animate js-popup-open" data-text="Game on" data-ref="form"
+									data-title="Partnership that drives success. <br> Receive exclusive benefits as&nbsp;a&nbsp;Partner in our Partner Program">
 						<span class="btn__label">Game on</span>
 						<span class="btn__bg"></span>
 					</button>
@@ -1035,22 +1128,28 @@
 	<section class="box hidden-to-s">
 		<div class="box__decor3">
 			<svg width="813" height="788" viewBox="0 0 813 788" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M54.1892 165.105C100.85 93.7827 173.393 43.3766 256.511 24.522L318.837 10.3839C387.399 -5.16892 459.036 -2.4828 526.272 18.0595C688.902 67.747 803.3 214.43 811.29 384.293L811.901 397.297C816.716 499.647 779.142 599.458 708.028 673.225C642.269 741.437 552.98 782.015 458.349 786.696L448.529 787.181C328.835 793.101 212.867 744.66 132.948 655.359L114.488 634.733C75.025 590.637 45.4538 538.608 27.761 482.138L15.5927 443.301C-13.808 349.465 0.353247 247.393 54.1892 165.105Z" fill="url(#paint0_radial_614:427)" fill-opacity="0.15"/>
+				<path
+					d="M54.1892 165.105C100.85 93.7827 173.393 43.3766 256.511 24.522L318.837 10.3839C387.399 -5.16892 459.036 -2.4828 526.272 18.0595C688.902 67.747 803.3 214.43 811.29 384.293L811.901 397.297C816.716 499.647 779.142 599.458 708.028 673.225C642.269 741.437 552.98 782.015 458.349 786.696L448.529 787.181C328.835 793.101 212.867 744.66 132.948 655.359L114.488 634.733C75.025 590.637 45.4538 538.608 27.761 482.138L15.5927 443.301C-13.808 349.465 0.353247 247.393 54.1892 165.105Z"
+					fill="url(#paint0_radial_614:427)" fill-opacity="0.15"/>
 				<defs>
-					<radialGradient id="paint0_radial_614:427" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
+					<radialGradient id="paint0_radial_614:427" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="#F8FBFF" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="#F8FBFF" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
 		</div>
 		<div class="box__decor4">
 			<svg width="813" height="788" viewBox="0 0 813 788" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M54.1892 165.105C100.85 93.7827 173.393 43.3766 256.511 24.522L318.837 10.3839C387.399 -5.16892 459.036 -2.4828 526.272 18.0595C688.902 67.747 803.3 214.43 811.29 384.293L811.901 397.297C816.716 499.647 779.142 599.458 708.028 673.225C642.269 741.437 552.98 782.015 458.349 786.696L448.529 787.181C328.835 793.101 212.867 744.66 132.948 655.359L114.488 634.733C75.025 590.637 45.4538 538.608 27.761 482.138L15.5927 443.301C-13.808 349.465 0.353247 247.393 54.1892 165.105Z" fill="url(#paint0_radial_472:1042)" fill-opacity="0.15"/>
+				<path
+					d="M54.1892 165.105C100.85 93.7827 173.393 43.3766 256.511 24.522L318.837 10.3839C387.399 -5.16892 459.036 -2.4828 526.272 18.0595C688.902 67.747 803.3 214.43 811.29 384.293L811.901 397.297C816.716 499.647 779.142 599.458 708.028 673.225C642.269 741.437 552.98 782.015 458.349 786.696L448.529 787.181C328.835 793.101 212.867 744.66 132.948 655.359L114.488 634.733C75.025 590.637 45.4538 538.608 27.761 482.138L15.5927 443.301C-13.808 349.465 0.353247 247.393 54.1892 165.105Z"
+					fill="url(#paint0_radial_472:1042)" fill-opacity="0.15"/>
 				<defs>
-					<radialGradient id="paint0_radial_472:1042" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
+					<radialGradient id="paint0_radial_472:1042" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="#F8FBFF" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="#F8FBFF" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1076,56 +1175,54 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="cardRow">
-										<div class="cardRow__item cardRow__item--l">
-											<div class="card">
-												<img src="img/graph-time.png" srcset="img/graph-time@2x.png 2x"
-														 alt="graph web transaction time">
+										<div class="cardRow__item">
+											<div class="card card--radius">
+												<img src="img/graph-time.svg" alt="graph web transaction time">
 											</div>
 										</div>
 										<div class="cardRow__item cardRow__item--s cardRow__item--flex">
 											<div class="card card--radius">
-												<img src="img/graph-throughput.png" srcset="img/graph-throughput@2x.png 2x"
+												<img src="img/graph-throughput.svg"
 														 alt="graph web throughput">
 											</div>
 										</div>
 										<div class="cardRow__item cardRow__item--s">
-											<div class="plateBrand plateBrand--s h-100 fz-18">
-												Работа api сервера - обработка большого числа запросов - 16k
-												в минуту/14k в минуту
-												с минимальным числом ошибок (не коррелируется с нагрузкой на сервер) иминимальным временем
-												ответа < 150 мс.
-												(картинки 1 и 2)
+											<div class="plateBrand plateBrand--m h-100 fz-18">
+												API server operation&nbsp;&mdash; processing a&nbsp;large amount of&nbsp;requests&nbsp;&mdash;
+												16K per minute&nbsp;/ 14K per minute with a&nbsp;minimum number of&nbsp;errors (not&nbsp;correlated
+												with server load) and a&nbsp;minimum response time &lt;150&nbsp;msec.
 											</div>
 										</div>
 										<div class="cardRow__item cardRow__item--s">
 											<div class="card card--radius">
-												<img src="img/graph-error.png" srcset="img/graph-error@2x.png 2x" alt="graph web errors">
+												<img src="img/graph-error.svg" alt="graph web errors">
 											</div>
 										</div>
 										<div class="cardRow__item cardRow__item--s">
 											<div class="card card--radius">
-												<img src="img/graph-score.png" srcset="img/graph-score@2x.png 2x" alt="graph apdex score">
+												<img src="img/graph-score.svg" alt="graph apdex score">
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="cardRow">
-										<div class="cardRow__item cardRow__item--m">
+										<div class="cardRow__item cardRow__item--center">
 											<img src="img/graph-breakdown.svg" alt="graph application breakdown">
-											<div class="plateBrand plateBrand--top">
-												Стабильная работа в условиях резкого роста нетипичных запросов связанных с фазами проведения
-												популярных игровых событий (картинка 3)
+											<div class="plateBrand plateBrand--top fz-18">
+												Stable work in&nbsp;conditions of&nbsp;a&nbsp;sharp increase of&nbsp;non-typical requests caused
+												by&nbsp;the phases of&nbsp;popular game events
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="cardRow">
-										<div class="cardRow__item">
+										<div class="cardRow__item cardRow__item--center">
 											<img src="img/graph-database.svg" alt="graph database">
-											<div class="plateBrand plateBrand--top">
-												200k запрос в минуту к субд серверам от приложения без замедления скорости ответа (картинка 4)
+											<div class="plateBrand plateBrand--top plateBrand--l">
+												200K requests per minute from the application to&nbsp;DBMS servers without slowing down the
+												response rate
 											</div>
 										</div>
 									</div>
@@ -1138,7 +1235,7 @@
 		</div>
 	</section>
 	<section class="box">
-		<div class="box__decor2">
+		<div class="box__decor2 hidden-to-s">
 			<svg width="813" height="788" viewBox="0 0 813 788" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M54.1892 165.105C100.85 93.7827 173.393 43.3766 256.511 24.522L318.837 10.3839C387.399 -5.16892 459.036 -2.4828 526.272 18.0595C688.902 67.747 803.3 214.43 811.29 384.293L811.901 397.297C816.716 499.647 779.142 599.458 708.028 673.225C642.269 741.437 552.98 782.015 458.349 786.696L448.529 787.181C328.835 793.101 212.867 744.66 132.948 655.359L114.488 634.733C75.025 590.637 45.4538 538.608 27.761 482.138L15.5927 443.301C-13.808 349.465 0.353247 247.393 54.1892 165.105Z"
@@ -1147,7 +1244,7 @@
 					<radialGradient id="paint0_radial_472:1042" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(399.5 409.053) rotate(106.72) scale(411.44 444.941)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="#F8FBFF" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="#F8FBFF" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1218,31 +1315,31 @@
 												gradientUnits="userSpaceOnUse">
 					<stop stop-color="white"/>
 					<stop offset="0.536458" stop-color="#D4E8FF"/>
-					<stop offset="1" stop-color="white"/>
+					<stop offset="0.95" stop-color="white"/>
 				</linearGradient>
 				<linearGradient id="paint1_linear_48:42" x1="0.999994" y1="126" x2="1455.5" y2="75.9996"
 												gradientUnits="userSpaceOnUse">
 					<stop stop-color="white"/>
 					<stop offset="0.536458" stop-color="#D4E8FF"/>
-					<stop offset="1" stop-color="white"/>
+					<stop offset="0.95" stop-color="white"/>
 				</linearGradient>
 				<linearGradient id="paint2_linear_48:42" x1="6.00001" y1="91.0002" x2="1434" y2="61.0004"
 												gradientUnits="userSpaceOnUse">
 					<stop stop-color="white"/>
 					<stop offset="0.536458" stop-color="#D4E8FF"/>
-					<stop offset="1" stop-color="white"/>
+					<stop offset="0.95" stop-color="white"/>
 				</linearGradient>
 				<linearGradient id="paint3_linear_48:42" x1="-8" y1="76.0005" x2="1434" y2="76.0005"
 												gradientUnits="userSpaceOnUse">
 					<stop stop-color="white"/>
 					<stop offset="0.536458" stop-color="#D4E8FF"/>
-					<stop offset="1" stop-color="white"/>
+					<stop offset="0.95" stop-color="white"/>
 				</linearGradient>
 				<linearGradient id="paint4_linear_48:42" x1="-4.29654e-06" y1="60.9995" x2="1434" y2="45.4997"
 												gradientUnits="userSpaceOnUse">
 					<stop stop-color="white"/>
 					<stop offset="0.536458" stop-color="#D5E8FF"/>
-					<stop offset="1" stop-color="white"/>
+					<stop offset="0.95" stop-color="white"/>
 				</linearGradient>
 			</defs>
 		</svg>
@@ -1331,11 +1428,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="box box--stick js-cases" id="cases">
+	<section class="box js-cases" id="cases">
 		<div class="layout slider slider--cases">
-			<h2 class="title box__header text-center">Case: Our Original Crash Game</h2>
+			<h2 class="title box__header text-center">We'll help you to start fast, scale easily and grow securely</h2>
 			<div class="swiper-container">
-				<div class="text-right hidden-to-s">
+				<div class="text-right">
 					<button class="swiper-button-next"></button>
 				</div>
 				<div class="swiper-wrapper">
@@ -1682,7 +1779,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="box box--accent box--s" id="contact">
+	<section class="box box--accent" id="contact">
 		<div class="box__ellipse hidden-to-s">
 			<svg width="1326" height="1259" viewBox="0 0 1326 1259" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="663" cy="629.5" rx="663" ry="629.5" fill="url(#paint0_radial_472:1038)" fill-opacity="0.4"/>
@@ -1690,7 +1787,7 @@
 					<radialGradient id="paint0_radial_472:1038" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(663 629.5) rotate(89.8975) scale(550.69 579.996)">
 						<stop stop-color="#FA842E"/>
-						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1702,7 +1799,7 @@
 					<radialGradient id="paint0_radial_472:1037" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
 													gradientTransform="translate(575 545) rotate(89.9193) scale(619.121 653.201)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1711,9 +1808,10 @@
 			<svg width="404" height="589" viewBox="0 0 404 589" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="202" cy="294.5" rx="202" ry="294.5" fill="url(#paint0_radial_598:4482)" fill-opacity="0.4"/>
 				<defs>
-					<radialGradient id="paint0_radial_598:4482" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(202 294.5) rotate(89.9475) scale(334.552 229.472)">
+					<radialGradient id="paint0_radial_598:4482" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(202 294.5) rotate(89.9475) scale(334.552 229.472)">
 						<stop stop-color="#169BFC"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1722,9 +1820,10 @@
 			<svg width="526" height="551" viewBox="0 0 526 551" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="263" cy="275.5" rx="263" ry="275.5" fill="url(#paint0_radial_598:4483)" fill-opacity="0.4"/>
 				<defs>
-					<radialGradient id="paint0_radial_598:4483" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(263 275.5) rotate(89.9071) scale(241.009 230.074)">
+					<radialGradient id="paint0_radial_598:4483" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+													gradientTransform="translate(263 275.5) rotate(89.9071) scale(241.009 230.074)">
 						<stop stop-color="#FA842E"/>
-						<stop offset="1" stop-color="white" stop-opacity="0.13"/>
+						<stop offset="0.95" stop-color="white" stop-opacity="0.13"/>
 					</radialGradient>
 				</defs>
 			</svg>
@@ -1744,7 +1843,10 @@
 					<form action="#" class="form form--left">
 						<div class="form__back"></div>
 						<div class="form__item">
-							<input type="text" placeholder="First and last name" class="formField">
+							<input type="text" placeholder="First name" class="formField">
+						</div>
+						<div class="form__item">
+							<input type="text" placeholder="Last name" class="formField">
 						</div>
 						<div class="form__item">
 							<input type="text" placeholder="Company name" class="formField">
@@ -1766,13 +1868,10 @@
 							</div>
 						</div>
 						<div class="form__item">
-							<input type="email" placeholder="Phone" class="formField">
+							<input type="text" placeholder="Phone" class="formField">
 						</div>
 						<div class="form__item">
-							<input type="text" placeholder="E-mail" class="formField">
-						</div>
-						<div class="form__item">
-							<textarea placeholder="Your comment" class="formField textarea-resize"></textarea>
+							<input type="email" placeholder="E-mail" class="formField">
 						</div>
 						<div class="form__footer">
 							<label class="option">
@@ -1801,9 +1900,9 @@
 				<ul class="list list--footer">
 					<li class="list__item list__title">Сustomer service</li>
 					<li class="list__item lh-s">
-						(US) +1 206 693 4359 <br>
-						(NL) +31 20 532 0842 <br>
-						(UK) +44 203 514 6053
+						<a href="tel:+1 206 693 4359" class="link">(US) +1 206 693 4359</a> <br>
+						<a href="tel:+31 20 532 0842" class="link">(NL) +31 20 532 0842</a> <br>
+						<a href="tel:+44 203 514 6053" class="link">(UK) +44 203 514 6053</a>
 					</li>
 					<li class="list__item list__item--l">
 						<a href="mailto:commerce@omegalab.dev" class="link link--underline">commerce@omegalab.dev</a>
@@ -1817,16 +1916,16 @@
 			<div class="cell__4 cell__m-6 cell__s-12">
 				<ul class="list list--left list--footer">
 					<li class="list__item list__title list__title--adaptive">
-						<a href="/" class="link">Privacy Policy</a>
+						<a href="/privacy-policy.pdf" target="_blank" class="link">Privacy Policy</a>
 					</li>
 					<li class="list__item list__title list__title--adaptive">
-						<a href="/" class="link">Cookie Policy</a>
+						<a href="/cookie-policy.pdf" target="_blank" class="link">Cookie Policy</a>
 					</li>
 					<li class="list__item list__title list__title--adaptive">
-						<a href="/" class="link">Terms and Conditions</a>
+						<a href="/terms.pdf" target="_blank" class="link">Terms and Conditions</a>
 					</li>
 					<li class="list__item list__title list__title--adaptive">
-						<a href="/" class="link">Acceptable use policy</a>
+						<a href="/use.pdf" target="_blank" class="link">Acceptable use policy</a>
 					</li>
 				</ul>
 			</div>
@@ -1844,5 +1943,8 @@
 	</div>
 </footer>
 <script src="js/main.js"></script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/24888111.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>

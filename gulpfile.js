@@ -18,8 +18,6 @@ const commonjs = require('rollup-plugin-commonjs');
 const replace = require('rollup-plugin-replace');
 const babel = require('rollup-plugin-babel');
 const uglify = require('gulp-uglify');
-//img
-const imagemin = require('gulp-imagemin');
 // svg
 const svgstore = require('gulp-svgstore');
 
@@ -77,20 +75,6 @@ const js_deploy = () => {
         .pipe(dest(path.js.dest))
 }
 
-const img = () => {
-    return src(path.img.src)
-        // .pipe(imagemin([
-        //   imagemin.optipng({optimizationLevel: 7}),
-        //   imagemin.svgo({
-        //     plugins: [
-        //         {removeViewBox: false},
-        //         {cleanupIDs: false}
-        //     ]
-        //   })
-        // ]))
-        .pipe(dest(path.img.dest))
-}
-
 const sprite = () => {
     const svgs = src(path.sprite.src)
         .pipe(svgstore({ inlineSvg: true }));
@@ -123,7 +107,6 @@ exports.styles = styles;
 exports.styles_deploy = styles_deploy;
 exports.js = js;
 exports.js_deploy = js_deploy;
-exports.img = img;
 exports.sprite = sprite;
 
 exports.serve = series(parallel(browsersync, watching));

@@ -16,17 +16,7 @@
 .cardRow__item {
 	padding: 20px;
 	width: 100%;
-	max-width: 662px;
-}
-
-.cardRow__item--l {
-	width: 100%;
 	max-width: 836px;
-}
-
-.cardRow__item--m {
-	width: 100%;
-	max-width: 624px;
 }
 
 .cardRow__item--s {
@@ -37,4 +27,10 @@
 .cardRow__item--flex {
 	display: flex;
 	align-items: flex-end;
+}
+
+.cardRow__item--center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

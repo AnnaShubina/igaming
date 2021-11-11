@@ -1,13 +1,19 @@
 .plateBrand {
 	border-radius: $border-radius;
 	background-color: rgba(216, 231, 255, 0.5);
-	padding: 24px 40px 24px 24px;
+	padding: 26px 20px 22px 24px;
+	max-width: 584px;
 }
 
-.plateBrand--s {
-	padding: 37px 18px 37px 26px;
+.plateBrand--l {
+	padding: 24px 70px 24px 24px;
+	max-width: 627px;
+}
+
+.plateBrand--m {
+	padding: 48px 28px 48px 35px;
 }
 
 .plateBrand--top {
-	margin-top: 24px;
+	margin-top: 70px;
 }

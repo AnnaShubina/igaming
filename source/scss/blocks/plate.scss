@@ -1,4 +1,5 @@
 .plate {
+	@include clear-link;
 	background-color: $color-back;
 	border-radius: $border-radius;
 	box-shadow: 0 3px 30px rgba(0, 28, 71, 0.1);
@@ -9,12 +10,29 @@
 	}
 }
 
+a.plate {
+	cursor: pointer;
+}
+
 .plate--s {
 	padding: 20px 20px 30px;
 	box-shadow: 0 3px 15px rgba(0, 28, 71, 0.1);
 	@include media(s) {
 		padding: 10px 20px 20px;
-		min-height: 220px;
+		min-height: 192px;
+	}
+
+	.plate__pic {
+		height: 156px;
+		@include media(s) {
+			height: 98px;
+		}
+	}
+
+	.plate__pic--l {
+		@include media(s) {
+			height: 110px;
+		}
 	}
 }
 
@@ -102,11 +120,71 @@
 }
 
 .plate__pic {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	object-fit: contain;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		height: auto;
+		vertical-align: middle;
+		object-fit: contain;
+	}
 	@include media(s) {
 		max-width: 198px;
 	}
 }
+
+.plate__pic--top {
+	img {
+		margin-top: 18px;
+		@include media(s) {
+			margin-top: 22px;
+		}
+	}
+}
+
+.plate__pic--topL {
+	img {
+		margin-top: 44px;
+		@include media(s) {
+			margin-top: 35px;
+		}
+	}
+}
+
+.plate__pic--topXL {
+	img {
+		margin-top: 54px;
+		@include media(s) {
+			margin-top: 35px;
+		}
+	}
+}
+
+.plate__pic--topS {
+	img {
+		margin-top: 10px;
+	}
+}
+
+.plate__pic--topMob {
+	img {
+		@include media(s) {
+			margin-top: 10px;
+		}
+	}
+}
+
+.plateWrap {
+	@include clear-link;
+	display: block;
+	border-radius: $border-radius;
+	padding: 1px;
+}
+
+.plateWrap:hover {
+	background: linear-gradient(to right, #FFDABE, #B4DFFF);
+	.plate {
+		background: linear-gradient(180deg, #FFFFFF 20.31%, #EEF5FF 100%);
+	}
+}
+
+

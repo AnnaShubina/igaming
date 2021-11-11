@@ -21,6 +21,15 @@
 	}
 }
 
+@keyframes rotation {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
 @keyframes slideToRight {
 	0% {
 		transform: translateX(-100%);
@@ -70,6 +79,10 @@
 @include media(from, m) {
 	.swell {
 		animation: swell 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+	}
+
+	.rotate {
+		animation: rotation 20s infinite linear;
 	}
 
 	.breathing {

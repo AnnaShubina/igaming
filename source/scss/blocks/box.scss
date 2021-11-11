@@ -17,6 +17,9 @@
 	@include media(l) {
 		margin-top: 0;
 	}
+	@include media(s) {
+		margin-top: 0;
+	}
 }
 
 
@@ -89,7 +92,7 @@
 }
 
 .box--back {
-	padding: 80px 0 60px;
+	padding: 80px 0 80px;
 	overflow: hidden;
 
 	@include media(s) {

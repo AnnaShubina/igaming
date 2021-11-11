@@ -1,0 +1,59 @@
+<svg width="520" height="506" viewBox="0 0 520 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect x="21" y="12" width="476" height="469" rx="100" fill="white" fill-opacity="0.4"/>
+	<g filter="url(#filter1d273336)">
+		<path
+			d="M259.468 232.5C261.968 217.833 269.881 180.765 214.001 185.5C184.5 188 188.5 154.5 208.001 154.5C236.001 154.5 306.547 156.77 330.001 154.5C357 151.887 351.501 120.413 333.001 118C310.001 115 219.502 118 196.501 118C173.5 118 170.902 85 200.502 85C220.502 85 256.004 84.5 274.004 62"
+			stroke="white" stroke-width="5"/>
+	</g>
+	<path
+		d="M75.5 346.512C75.5 300.666 112.666 263.5 158.512 263.5H361.281C407.241 263.5 444.5 300.759 444.5 346.719C444.5 401.608 392.296 441.463 339.348 426.997L285.727 412.347C267.904 407.478 249.096 407.516 231.293 412.459L180.719 426.5C127.827 441.184 75.5 401.406 75.5 346.512Z"
+		fill="url(#linear273336)" stroke="white" stroke-width="5"/>
+	<path
+		d="M146.5 331C151.194 331 155 327.194 155 322.5V306C155 304.067 156.567 302.5 158.5 302.5H180.5C182.433 302.5 184 304.067 184 306V322.5C184 327.194 187.806 331 192.5 331H212.5C214.433 331 216 332.567 216 334.5V353C216 354.933 214.433 356.5 212.5 356.5H192.5C187.806 356.5 184 360.306 184 365V381C184 382.933 182.433 384.5 180.5 384.5H158.5C156.567 384.5 155 382.933 155 381V365C155 360.306 151.194 356.5 146.5 356.5H128C126.067 356.5 124.5 354.933 124.5 353V334.5C124.5 332.567 126.067 331 128 331H146.5Z"
+		stroke="white" stroke-width="5"/>
+	<path
+		d="M373.5 314.5C373.5 323.469 366.655 330.5 358.5 330.5C350.345 330.5 343.5 323.469 343.5 314.5C343.5 305.531 350.345 298.5 358.5 298.5C366.655 298.5 373.5 305.531 373.5 314.5Z"
+		stroke="white" stroke-width="5"/>
+	<path
+		d="M373.5 368.5C373.5 377.469 366.655 384.5 358.5 384.5C350.345 384.5 343.5 377.469 343.5 368.5C343.5 359.531 350.345 352.5 358.5 352.5C366.655 352.5 373.5 359.531 373.5 368.5Z"
+		stroke="white" stroke-width="5"/>
+	<path
+		d="M405.5 341.5C405.5 350.469 398.655 357.5 390.5 357.5C382.345 357.5 375.5 350.469 375.5 341.5C375.5 332.531 382.345 325.5 390.5 325.5C398.655 325.5 405.5 332.531 405.5 341.5Z"
+		stroke="white" stroke-width="5"/>
+	<path
+		d="M341.5 341.5C341.5 350.469 334.655 357.5 326.5 357.5C318.345 357.5 311.5 350.469 311.5 341.5C311.5 332.531 318.345 325.5 326.5 325.5C334.655 325.5 341.5 332.531 341.5 341.5Z"
+		stroke="white" stroke-width="5"/>
+	<path
+		d="M223.5 248C223.5 238.335 231.335 230.5 241 230.5H278C287.665 230.5 295.5 238.335 295.5 248V263.5H223.5V248Z"
+		fill="url(#linear273336)" stroke="white" stroke-width="5"/>
+	<circle cx="93" cy="430" r="8" fill="#FFDCF9"/>
+	<circle cx="455" cy="74" r="8" fill="#FFCDCD"/>
+	<circle opacity="0.4" cx="455" cy="21" r="21" fill="#D8E7FF"/>
+	<circle cx="509" cy="42" r="11" fill="#FFDCF9"/>
+	<circle cx="21" cy="409" r="21" fill="#FFE6D3"/>
+	<circle cx="42" cy="495" r="11" fill="#FFF8B7"/>
+	<defs>
+		<filter id="filter1d273336" x="146.272" y="30.4383" width="234.804" height="232.482"
+						filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+										 result="hardAlpha"/>
+			<feOffset/>
+			<feGaussianBlur stdDeviation="15"/>
+			<feComposite in2="hardAlpha" operator="out"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0115451 0 0 0 0 0.326266 0 0 0 0 0.554167 0 0 0 0.2 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_273:336"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_273:336" result="shape"/>
+		</filter>
+		<linearGradient id="linear273336" x1="149" y1="285.5" x2="396.5" y2="412"
+										gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFDABE"/>
+			<stop offset="1" stop-color="#B4DFFF"/>
+		</linearGradient>
+		<linearGradient id="linear273336" x1="236.647" y1="232.702" x2="286.06" y2="259.795"
+										gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFDABE"/>
+			<stop offset="1" stop-color="#B4DFFF"/>
+		</linearGradient>
+	</defs>
+</svg>
